@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    color: white;
+}
+
+footer {
+    background-color: #0fc8ed;
+    color: white;
+    display: flex;
+    align-items: stretch;
+    gap: 100rem;
+    padding: 0 1rem;
+}
