@@ -6,6 +6,8 @@ h1 {
 
 h2, h3 {
     text-align: center;
+    color: #073d47;
+
 }
 
 
@@ -14,4 +16,23 @@ h2, h3 {
     font-weight: 500;
     font-style: normal;
   }
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.graphics {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.central-graphic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
   
