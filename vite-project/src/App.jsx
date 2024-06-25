@@ -24,8 +24,8 @@ function App() {
           <Route path="/projects" element = {<Projects />} />
           <Route path="/team" element = {<Team />} />
         </Routes>
+        <Footer/>
       </div>
-      <Footer/>
     </>
   )
 }
