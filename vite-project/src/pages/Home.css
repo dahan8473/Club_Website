@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #073d47;
+    font-size: 50px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #073d47;
+
+}
+
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .graphics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .central-graphic {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+  
