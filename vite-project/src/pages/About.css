@@ -1,0 +1,44 @@
+.h1{
+  text-align:left;
+  
+  font-size:100px;
+  font-family:"Kanit",sans-serif
+  font-style:normal;
+  display:block;
+}
+
+
+.title{
+  
+  
+}
+.h3{
+  display:inline;
+  
+}
+
+.text{
+  display:inline;
+  text-align:left;
+  font-size:15px;
+  font-family:"Kanit", sans-serif;
+  font-weight:10;
+  font-style: normal;
+  color:#073d47;
+}
+.logo{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+}
+
+.fade{
+  animation-name:fade;
+  animation-duration:1.5s;
+  
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

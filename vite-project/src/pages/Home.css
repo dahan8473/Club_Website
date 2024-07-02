@@ -39,5 +39,21 @@ h2, h3 {
     width: 50%;
     height: auto;
     display: block;
+    
   }
-  
+  .center{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    
+  }
+  .animated-element{
+  animation-name:fade;
+  animation-duration:1.5s;
+  }
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
