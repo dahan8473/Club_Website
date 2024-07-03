@@ -11,10 +11,10 @@ export default function Home() {
       <h1 class="kanit-medium">Welcome to TSI at Western!</h1>
       <h2 class="kanit-light">Providing technological solutions to nonprofit organizations</h2>
       <div class="graphics">
-        <img class="central-graphic" style={{width: "328px", height: "400px"}} src={other_street} />
+        {/*<img class="central-graphic" style={{width: "328px", height: "400px"}} src={other_street} />
         <img class="central-graphic" style={{width: "400px", height: "400px"}} src={hospital} />
         <img class="central-graphic" style={{width: "400px", height: "400px"}} src={city} />
-        <img class="central-graphic" style={{width: "400px", height: "400px"}} src={street} />
+        <img class="central-graphic" style={{width: "400px", height: "400px"}} src={street} /> */}
       </div>
     </>
    )

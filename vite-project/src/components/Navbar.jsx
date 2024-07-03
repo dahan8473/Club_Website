@@ -1,11 +1,25 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import React, { useState } from 'react';
 import "./Navbar.css"
 
 export default function Navbar() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+      setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+    
     return (
-        <nav class="nav">
-            <div>
-                <ul class="pages">
+        <nav class={`nav ${isMobileMenuOpen ? 'show-mobile-menu' : ''}`}>
+            <div class="toggle-button">
+                <a href="#" onClick={toggleMobileMenu}>
+                    <span class="bar"/>
+                    <span class="bar"/>
+                    <span class="bar"/>
+                </a>
+            </div>
+            <div class="pages">
+                <ul>
                     <CustomLink to="/" class="kanit-semibold">Home</CustomLink>
                     <CustomLink to="/about" class="kanit-semibold">About</CustomLink>
                     <CustomLink to="/projects" class="kanit-semibold">Projects</CustomLink>
