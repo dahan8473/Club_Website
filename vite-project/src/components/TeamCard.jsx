@@ -23,18 +23,18 @@ export default function TeamCard({
 
     return (
         <div className="card w-96 shadow-xl relative">
-            <div className="bg-blue-200 shadow-md h-32 relative">
-                <div className="absolute inset-x-0 -bottom-12 flex justify-center items-center">
+            <div className="bg-blue-200 border-b-8 border-white rounded-tl-lg rounded-tr-lg shadow-md h-28 relative">
+                <div className="absolute inset-x-0 -bottom-16 flex justify-center items-center">
                     <img
-                        className="rounded-full border-2 border-white"
+                        className="rounded-full border-4 border-white"
                         src={memberImage}
                         alt={memberName}
-                        style={{ width: "96px", height: "96px" }}
+                        style={{ width: "120px", height: "120px" }}
                     />
                 </div>
             </div>
 
-            <div className="card-body text-center pt-16">
+            <div className="card-body text-center pt-16 bg-white rounded-bl-lg rounded-br-lg">
                 <h2 className="card-title justify-center">{memberName}</h2>
                 <p>{memberPosition}</p>
                 <div className="card-actions justify-end mt-6 center">
@@ -78,3 +78,5 @@ function Popup({ memberName, memberPosition, memberDescription, memberImage, onC
         </div>
     );
 }
+
+
