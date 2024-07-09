@@ -1,13 +1,28 @@
-.heading{
+.heading1{
   text-align:center;
   font-size:50px;
   font-family:"Kanit",sans-serif;
   display:block;
   font-style:normal;
+  color:#073d47;
 }
-
-
-.subtext{
+.heading2{
+  text-align:center;
+  font-size:50px;
+  font-family:"Kanit",sans-serif;
+  display:block;
+  font-style:normal;
+  color:#073d47;
+  
+}
+.subtext1{
+  display:inline-block;
+  font-size:20px;
+  font-family:"Kanit",sans-serif;
+  font-style:normal;
+  color:#1f7a8c;
+}
+.subtext2{
   display:inline-block;
   font-size:20px;
   font-family:"Kanit",sans-serif;
