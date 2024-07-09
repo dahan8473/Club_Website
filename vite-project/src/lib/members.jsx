@@ -5,6 +5,7 @@ export const team = [
   {
     name: "John Doe",
     position: "V.P. of Janitorial Excellence",
+    team: "Exec Team",
     description: (
       <div>
         <p className="mb-2">
@@ -38,6 +39,7 @@ export const team = [
   {
     name: "Jane Doe",
     position: "V.P. of Marketing",
+    team: "Exec Team",
     description:
       "I'm a fourth year in the Marketing program at Western University, and I'm excited to be a part of the team! My hobbies are marketing, marketing, and marketing. I'm looking forward to working with all of you!",
     image:
@@ -47,6 +49,7 @@ export const team = [
   {
     name: "Jack Doe",
     position: "V.P. of Technology",
+    team: "Exec Team",
     description:
       "I'm a fifth year in the Technology program at Western University, and I'm excited to be a part of the team! My hobbies are technology, technology, and technology. I'm looking forward to working with all of you!",
     image:
@@ -65,6 +68,7 @@ export const team = [
   {
     name: "Michael Brown",
     position: "Lead Developer",
+    team: "Exec Team",
     description:
       "As the lead developer, I architect and build robust solutions to tackle complex technical challenges.",
     image:
@@ -74,6 +78,7 @@ export const team = [
   {
     name: "Sarah Johnson",
     position: "Marketing Specialist",
+    team: "Dev Team",
     description:
       "I handle all things marketing, from campaigns to social media. Let's create some buzz!",
     image:
@@ -83,6 +88,7 @@ export const team = [
   {
     name: "David Wilson",
     position: "Senior Designer",
+    team: "Dev Team",
     description:
       "With an eye for aesthetics, I design elegant and intuitive user interfaces.",
     image:
@@ -92,6 +98,7 @@ export const team = [
   {
     name: "Emma Garcia",
     position: "Finance Manager",
+    team: "Finance Team",
     description:
       "I manage finances and ensure our budgets are well-planned and executed.",
     image:
