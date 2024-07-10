@@ -3,7 +3,7 @@
   font-size:50px;
   font-family:"Kanit",sans-serif;
   display:block;
-  font-style:normal;
+  font-style:bold;
   color:#073d47;
 }
 
@@ -19,17 +19,16 @@
 
 .subtext1{
   display:inline-block;
-  font-size:20px;
-  font-family:"Kanit",sans-serif;
   font-style:normal;
-  color:#1f7a8c;
+  color:#E1E5F2;
 }
 
 .subtext2 {
   display:inline-block;
-  font-size:20px;
+  font-style:bold;
   font-family:"Kanit",sans-serif;
-  font-style:normal;
+  font-size:20px;
+  color:#1f7a8c;
 }
 
 .h3 {
