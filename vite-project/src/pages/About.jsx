@@ -21,10 +21,10 @@ export default function About(){
 
           <div className="hero-content text-neutral-content text-center relative z-10 pointer-events-auto">
             <div className="max-w-md">
-              <h1 class="heading1">
+              <h1 class="heading1" className="mb-5 text-5xl font-primary font-bold">
                 About Us
               </h1>
-              <p class="text">
+              <p class="subtext1">
                 At TSI, we are committed to providing tech solutions for organizations committed to social good. Our mission is to create opportunities for Western students to collaborate in a professional work environment while addressing the needs of organizations that are actively working to improve our society.
               </p>
             </div>
