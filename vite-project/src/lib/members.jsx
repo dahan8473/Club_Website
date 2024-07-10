@@ -4,7 +4,7 @@ Team.jsx file to display the team members on the website. */
 export const team = [
   {
     name: "David Liu",
-    position: "Founder",
+    position: "Founder, Representative",
     team: "Exec Team",
     description: (
       <div>
@@ -88,6 +88,7 @@ export const team = [
   {
     name: "Ethan Liu",
     position: "Cofounder",
+    team: "Dev Team",
     description :(
       <div>
         <p className="mb-2">
@@ -114,8 +115,8 @@ export const team = [
   },
   {
     name: "Caroline Shen",
-    position: "Lead Developer",
-    team: "Exec Team",
+    position: "VP of Outreach",
+    team: "Outreach Team",
     description:
     (
       <div>
@@ -223,5 +224,33 @@ export const team = [
     image:
       "https://images.squarespace-cdn.com/content/v1/5cf0d08d5fc69d000172462a/1632213066510-Y4M7JJYPMEJLP1DI4HC2/Andrine+Business+Headshot+London.jpg",
     bgColor: "#ffe4b5", // Moccasin
+  },
+  {
+    name: "Dev Joshi",
+    position: "VP of Finance",
+    team: "Finance Team",
+    description:
+    (
+      <div>
+        <p className="mb-2">
+          I'm a second year student at Western University, and I'm excited to meet new people! I will try my best to make this team a great place to work and learn from each other.
+        </p>
+        <h3 className="text-lg text-white font-semibold mt-4 mb-2">Major:</h3>
+        <p className="mb-4">2nd Year Business Management and Organizational Studies</p>
+
+        <h3 className="text-lg text-white font-semibold mt-4 mb-2">
+          Fun Facts:
+        </h3>
+        <ul className="text-left list-disc list-inside mb-4">
+          <li>Hometown: Markham, Ontario</li>
+          <li>Year and Program: 2nd Year Business Management and Organizational Studies</li>
+          <li>What you’re hoping to get out of TSI: To meet new people and gain tech and financial planning experience! </li>
+        </ul>
+
+
+      </div>),
+    image:
+      "https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png",
+    bgColor: "#1F7A8C", // dark cyan, from palette
   },
 ];
