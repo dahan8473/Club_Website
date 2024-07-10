@@ -26,24 +26,42 @@ h2, h3 {
     font-style: normal;
 }
 
-  .graphics {
+.graphics {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 100%;
-  }
+}
 
-  .central-graphic {
+.central-graphic {
     width: 50%;
     height: auto;
     display: block;
-  }
+}
 
-  @media (max-width: 700px) {
+.center{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    
+}
+
+.animated-element{
+  animation-name:fade;
+  animation-duration:1.5s;
+ }
+
+
+@media (max-width: 700px) {
     h1 {
       font-size: 40px;
     }
 
-  }
-  
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

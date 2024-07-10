@@ -1,4 +1,4 @@
 # Club_Website
 
-Club website repository for Western Blueprints (or whatever name we decide on)
+Club website repository for UWO- Tech for Social Impact
 

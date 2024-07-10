@@ -1,0 +1,44 @@
+.h1 {
+  text-align: left;
+  font-size: 100px;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  display: block;
+}
+
+.subtext {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  text-align: top;
+  margin-bottom: 0px;
+}
+
+.text {
+  display: inline;
+  text-align: top;
+  font-size: 15px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 10;
+  font-style: normal;
+  color: #073d47;
+  margin-top: 0px;
+}
+
+.profile {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+.members {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+.end {
+  margin-top: 100;
+}
