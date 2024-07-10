@@ -1,6 +1,7 @@
 import TeamCard from "../components/TeamCard.jsx";
 import { team } from "../lib/members.jsx";
 import Spline from "@splinetool/react-spline";
+import "./Team.css";
 
 export default function TeamPage() {
   return (
@@ -22,7 +23,7 @@ export default function TeamPage() {
 
         <div className="hero-content text-neutral-content text-center relative z-10 pointer-events-auto">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-primary font-bold">
+            <h1 class="heading"className="mb-5 text-5xl font-primary font-bold">
               Meet the Team
             </h1>
             <p>
@@ -50,6 +51,12 @@ export default function TeamPage() {
         teamName={"Finance Team"}
         teamDesc={
           "Responsible for managing Western TSI's finances and budgeting"
+        }
+      />
+      <Team
+        teamName={"Outreach Team"}
+        teamDesc={
+          "Responsible for outreach to clients, as well as social media posts and engagements."
         }
       />
     </div>
