@@ -14,7 +14,6 @@ h2, h3 {
 
 }
 
-
 .kanit-medium {
     font-family: "Kanit", sans-serif;
     font-weight: 500;
@@ -25,7 +24,7 @@ h2, h3 {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
   .graphics {
     display: flex;
@@ -39,5 +38,12 @@ h2, h3 {
     width: 50%;
     height: auto;
     display: block;
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 40px;
+    }
+
   }
   

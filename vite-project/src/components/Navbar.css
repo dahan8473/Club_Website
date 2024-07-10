@@ -12,6 +12,7 @@ nav {
     display: flex;
     align-items: stretch;
     gap: 2rem;
+    width: 100%;
 }
 
 .nav ul {
@@ -108,7 +109,6 @@ nav {
     }
 
     .kanit-semibold {
-        width: 100%;
         justify-content: center;
     }
 

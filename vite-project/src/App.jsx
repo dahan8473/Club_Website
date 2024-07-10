@@ -17,17 +17,19 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;600&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
       </head>
       <Navbar/>
-      <div className="container">
-        <div className="content-wrap">
-          <Routes>
-            <Route path="/" element = {<Home />} />
-            <Route path="/about" element = {<About />} />
-            <Route path="/projects" element = {<Projects />} />
-            <Route path="/team" element = {<Team />} />
-          </Routes>
+      <body>
+        <div className="container">
+          <div className="content-wrap">
+            <Routes>
+              <Route path="/" element = {<Home />} />
+              <Route path="/about" element = {<About />} />
+              <Route path="/projects" element = {<Projects />} />
+              <Route path="/team" element = {<Team />} />
+            </Routes>
+          </div>
         </div>
-        <Footer/>
-      </div>
+      </body>
+      <Footer/>
     </>
   )
 }
