@@ -208,15 +208,15 @@ export const team = [
           I'm a third year student at Western University, and I'm excited to meet new people! I will try my best to make this team a great place to work and learn from each other.
         </p>
         <h3 className="text-lg text-white font-semibold mt-4 mb-2">Major:</h3>
-        <p className="mb-4">3rd Computer Science</p>
+        <p className="mb-4">3rd Year Software Engineering</p>
 
         <h3 className="text-lg text-white font-semibold mt-4 mb-2">
           Fun Facts:
         </h3>
         <ul className="text-left list-disc list-inside mb-4">
-          <li>Hometown: Busan, South Korea</li>
-          <li>Favourite TV Show: I don't watch TV</li>
-          <li>What you're hoping to get out of TSI: Leadership experience</li>
+          <li>Hometown: St. Catharines</li>
+          <li>Favourite TV Show: None</li>
+          <li>What you're hoping to get out of TSI: None</li>
         </ul>
 
 
