@@ -42,3 +42,14 @@
 .end {
   margin-top: 100;
 }
+.subtitle{
+  color:#E1E5F2;
+}
+
+.heading{
+  color:#E1E5F2;
+  font-style:bold;
+  font-size:40px;
+  font-family: "Kanit", sans-serif;
+  margin-bottom:10px;
+}
