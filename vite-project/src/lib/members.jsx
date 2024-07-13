@@ -28,7 +28,7 @@ export const team = [
       </div>
     ),
     image:
-      "https://media.istockphoto.com/id/1051202402/photo/portrait-of-smiling-businessman-holding-tablet-and-making-ok-sign.jpg?s=612x612&w=0&k=20&c=kyiOeGPmI2aPzK9V1WY7ZTABtEQi5nvm12hcz3ccmc0=",
+      "https://media.licdn.com/dms/image/D5603AQF5pK8ZCAcY8Q/profile-displayphoto-shrink_200_200/0/1673901733048?e=1726099200&v=beta&t=J0X7a37yP-shbyMkXDwf5hvZ-a13Dk7Hd0PDTL8wDbA",
     bgColor: "#f0f8ff", // AliceBlue
   },
   {
@@ -57,7 +57,7 @@ export const team = [
         </div>
       ),
     image:
-      "https://as2.ftcdn.net/v2/jpg/02/08/11/65/500_F_208116581_X2PxIJoaq6sOYRhfkqWSX9sjUmxKgfh3.jpg",
+      "https://media.licdn.com/dms/image/D5603AQHPvZuTZWXeuQ/profile-displayphoto-shrink_200_200/0/1709347201145?e=1726099200&v=beta&t=CjWur3vHhTCtiNfdvduTmaI4PDBHyORxlmRZwpYUWRE",
     bgColor: "#fafad2", // LightGoldenRodYellow
   },
   {
@@ -82,7 +82,7 @@ export const team = [
 
       </div>),
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZCpt9R0oqB1CJTdjt6v1nOJLUkunmPacIOQ&s",
+      "https://media.licdn.com/dms/image/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_200_200/0/1660002772504?e=1721502000&v=beta&t=TDG1IKHbvKOO99b1NnjV4GI0qFugudR9A7o5FivZJCw",
     bgColor: "#add8e6", // LightBlue
   },
   {
@@ -110,7 +110,7 @@ export const team = [
 
       </div>),
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW8bZLUBIFKBOCGQSdOtc7rm5A3bhitwfwWg&s",
+      "https://media.licdn.com/dms/image/D4D03AQFDXXOMo1vPKQ/profile-displayphoto-shrink_200_200/0/1690999964941?e=1726099200&v=beta&t=om7uLggbcTt3fDJUzDgGuFG3GzQrnir0DhVQDQGvPoE",
     bgColor: "#ffe4e1", // MistyRose
   },
   {
@@ -138,7 +138,7 @@ export const team = [
 
       </div>),
     image:
-      "https://i.pinimg.com/originals/3f/e9/fe/3fe9fe7f0573b76d84f1bc313e43c98d.jpg",
+      "https://media.licdn.com/dms/image/D5603AQG_iqLXlB2LZA/profile-displayphoto-shrink_200_200/0/1695323410215?e=1726099200&v=beta&t=90Mu-hnGc82HKAlfgLyD4nLI0582ujYxbeEllE1Ir5g",
     bgColor: "#e6e6fa", // Lavender
   },
   {
@@ -166,7 +166,7 @@ export const team = [
 
       </div>),
     image:
-      "https://media.licdn.com/dms/image/D4E03AQFShm5AykgrgA/profile-displayphoto-shrink_200_200/0/1697159163922?e=2147483647&v=beta&t=aUcLV1uMKfqqwmQkAGlHMkEbzmLmC-Mv0OJve0i8waA",
+      "https://media.licdn.com/dms/image/D5603AQFzvcTstv7Qgw/profile-displayphoto-shrink_200_200/0/1716394326252?e=1726099200&v=beta&t=QPLJJRBqMGL98I_ooSZTv3vfFkuMDnkkQqMp9iegr7Y",
     bgColor: "#f0e68c", // Khaki
   },
   {
@@ -194,7 +194,7 @@ export const team = [
 
       </div>),
     image:
-      "https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png",
+      "https://media.licdn.com/dms/image/D5603AQGzol8gd5HF0w/profile-displayphoto-shrink_200_200/0/1671905749788?e=1726099200&v=beta&t=H3w5KbmXwQfYKN58A_cFuHXxTaYjMCVOCHSxuddQOvo",
     bgColor: "#87ceeb", // SkyBlue
   },
   {
@@ -222,7 +222,7 @@ export const team = [
 
       </div>),
     image:
-      "https://images.squarespace-cdn.com/content/v1/5cf0d08d5fc69d000172462a/1632213066510-Y4M7JJYPMEJLP1DI4HC2/Andrine+Business+Headshot+London.jpg",
+      "https://media.licdn.com/dms/image/D4E35AQGGG6IdwbNjkQ/profile-framedphoto-shrink_200_200/0/1705594793888?e=1721505600&v=beta&t=enC3hAyiK3wL7DeMyzQgJUJBvKD9FbTiQekY_n0lhEs",
     bgColor: "#ffe4b5", // Moccasin
   },
   {
@@ -250,7 +250,7 @@ export const team = [
 
       </div>),
     image:
-      "https://i.pinimg.com/originals/07/33/ba/0733ba760b29378474dea0fdbcb97107.png",
+      "https://media.licdn.com/dms/image/D5603AQFh1W7gwxWpTA/profile-displayphoto-shrink_200_200/0/1713822581469?e=1726099200&v=beta&t=ch90p_1QXhQA24zJaXBKPQpDGLDLcBOUnygdFc24w-A",
     bgColor: "#1F7A8C", // dark cyan, from palette
   },
 ];
