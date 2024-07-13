@@ -23,10 +23,10 @@ export default function TeamPage() {
 
         <div className="hero-content text-neutral-content text-center relative z-10 pointer-events-auto">
           <div className="max-w-md">
-            <h1 class="heading"className="mb-5 text-5xl font-primary font-bold">
+            <h1 class="heading" className="mb-5 text-5xl font-primary font-bold">
               Meet the Team
             </h1>
-            <p>
+            <p class="subtitle">
               Our community is diverse in its expertise, yet we are united by
               our shared enthusiasm for supporting nonprofits and our keen
               interest in technology.
