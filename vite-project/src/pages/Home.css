@@ -42,10 +42,10 @@ h2, h3 {
 
 .center{
       position: relative;
-      bottom: 10%;
+      bottom: 40%;
       left: 50%;
-      transform: translate(-50%, 0);
-      padding: 10px;
+      transform: translate(-50%, 0%);
+      padding: 0px;
     
 }
 
@@ -68,7 +68,7 @@ h2, h3 {
       
       left: 50%;
         top:50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -60%);
 }
 
 @keyframes fade {
