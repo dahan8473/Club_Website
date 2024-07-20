@@ -6,13 +6,13 @@ body {
     margin: 0;
 }
 
-.nav {
+nav {
     background-color: #022B3A;
     color: white;
     display: flex;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
+    width: 100%;
 }
 
 .nav ul {
@@ -47,9 +47,84 @@ body {
     background-color: #03394d;
 }
 
+.toggle-button a {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nav li:hover {
+    background-color: #03394d;
+}
+
+.nav li.active {
+    background-color: #03394d;
+}
+
 .kanit-semibold {
     font-family: "Kanit", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
 
+  @media (max-width: 700px) {
+    .toggle-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .toggle-button a {
+        display: flex;
+        position: static;
+        margin-top: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .pages {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .nav a {
+        font-size: medium;
+    }
+
+    .kanit-semibold {
+        justify-content: center;
+    }
+
+    .nav li {
+        width: 100%;
+        justify-content: center;
+        display: none;
+    }
+
+    .nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav.show-mobile-menu li {
+        display: flex;
+      }
+
+}
