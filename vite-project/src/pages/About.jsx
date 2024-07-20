@@ -1,6 +1,7 @@
 import './About.css'
 import logo from "../assets/images/tsi_logo_globe.png"
 import Spline from "@splinetool/react-spline";
+import western from "../assets/images/western.png"
 export default function About(){
     return(
       <div>
@@ -32,8 +33,11 @@ export default function About(){
         </div>
         
         <div>
-        <h2 class="text">
+          <img class="western" src={western}/>
+        <h2 class="subtext21>Non-profit Organization started by Students at Western University!
         </h2>
+          
+          
       <img class="logo fade" src={logo}/></div>
         <div><h1 class="heading2">Our Goals</h1>
           <br></br><br></br>
