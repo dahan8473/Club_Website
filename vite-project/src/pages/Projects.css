@@ -7,14 +7,24 @@ h1 {
 }
 
 .graphics {
+    position:relative;
+    
     padding-left: 2rem;
+    padding-top:2rem;
+    padding-right:2rem;
+    width:15%;
+    height:10%;
+    margin-left:2.1rem;
+    margin-right:2.rem;
     
 }
 
 .kanit-medium {
     font-family: "Kanit", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    font-size:20px;
     font-style: normal;
+    
 }
 
 .kanit-light {
@@ -28,8 +38,15 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    
     gap: 1rem;
+}
+.kanit-heavy{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size:40px;
+    font-style:bold;
+    padding-top:30px;
 }
 
 .text-body {
@@ -42,6 +59,10 @@ h1 {
 #logo {
     padding-right: 2rem;
     padding-left: 0;
+}
+.text-left{
+    display:inline;
+    
 }
 
 @media (max-width: 700px) {
