@@ -34,7 +34,7 @@ export default function About(){
         
         <div>
           <img class="western" src={western}/>
-        <h2 class="subtext21>Non-profit Organization started by Students at Western University!
+        <h2 class="subtext2">Non-profit Organization started by Students at Western University!
         </h2>
           
           
