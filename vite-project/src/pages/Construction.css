@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.graphics {
+  padding-left: 2rem;
+
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  gap: 1rem;
+}
+
+.text-body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  align-items: center;
+}
+
+#logo {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+@media (max-width: 700px) {
+
+  h1 {
+      margin-top: 0;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  .projects-container {
+      flex-direction: column;
+      gap: 0;
+  }
+
+  .graphics {
+      max-height: 370px;
+      max-width: 400px;
+      margin-bottom: 0;
+  }
+}
