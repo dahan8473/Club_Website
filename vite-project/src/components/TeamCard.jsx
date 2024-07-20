@@ -34,7 +34,8 @@ export default function TeamCard({ member }) {
       <div className="card-body text-center pt-16 bg-white rounded-bl-lg rounded-br-lg">
         <h2 className="card-title justify-center">{member.name}</h2>
         <p>{member.position}</p>
-        <div className="card-actions justify-end mt-6 center">
+      <br></br><br></br>
+        <div className="card-actions justify-center mt-6 center">
           <button
             onClick={handleMoreClick}
             className="btn btn-sm btn-outline btn-primary text-sm"
