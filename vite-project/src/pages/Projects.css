@@ -11,11 +11,9 @@ h1 {
     
     padding-left: 2rem;
     padding-top:2rem;
-    padding-right:2rem;
-    width:15%;
-    height:10%;
+
     margin-left:2.1rem;
-    margin-right:2.rem;
+    width:30%;
     
 }
 
@@ -34,12 +32,12 @@ h1 {
 }
 
 .projects-container {
-    display: flex;
+    display: inline-grid;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr 1.5fr;
     
-    gap: 1rem;
 }
 .kanit-heavy{
     font-family: "Kanit", sans-serif;
@@ -50,10 +48,11 @@ h1 {
 }
 
 .text-body {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     padding-top: 3rem;
     align-items: center;
+    
 }
 
 #logo {
@@ -84,5 +83,6 @@ h1 {
         max-height: 370px;
         max-width: 400px;
         margin-bottom: 0;
+        
     }
 }
