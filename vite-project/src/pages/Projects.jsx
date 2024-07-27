@@ -42,35 +42,36 @@ export default function Projects() {
             <div>
                 <h1 class="kanit-heavy">Project List</h1>
 <div class="projects-container">
-    <img class="graphics" src={internet}/>
+    <div><img class="graphics" src={internet}/></div>
+    
     <div class="text-body"><h2 class="kanit-medium">Website Development</h2><h1 class="kanit-light">Created by our talented students in Computer Science and software engineering </h1></div>
     
-</div>
+
     
 
-                <div class="projects-container">
+               
                     <img class="graphics" src={gadget}/>
                     <div class="text-body"><h2 class="kanit-medium">Custom Gadgets</h2><h1 class="kanit-light">From remote controlled devices to customized Asthma Inhaler Counters, our engineering students can create customized gadgets for the community. </h1></div>
-                </div>
+               
 
                 
 
-                <div class="projects-container">
+                
                     <img class="graphics" src={lightbulb}/>
                     <div class="text-body"><h2 class="kanit-medium">Technology Workshops</h2><h1 class="kanit-light">Our students can help run technology workshops or education sessions for the community. </h1></div>
 
 
-                </div>
+            
 
-                <div class="projects-container">
+            
                     <img class="graphics" src={app}/>
                     <div class="text-body"><h2 class="kanit-medium">Custom Applications</h2><h1 class="kanit-light">We can create customized application for managing your databases. </h1></div>
 
-                </div>
                 
                 
                 
-            
+                
+</div>
             
             </div>
             
