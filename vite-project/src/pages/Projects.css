@@ -6,67 +6,89 @@ h1 {
     margin-bottom: 0;
 }
 
-.graphics {
-    position:relative;
-    
-    padding-left: 2rem;
-    padding-top:2rem;
-    padding-right:2rem;
-    width:15%;
-    height:10%;
-    margin-left:2.1rem;
-    margin-right:2.rem;
-    
-}
 
-.kanit-medium {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-size:20px;
-    font-style: normal;
-    
-}
-
-.kanit-light {
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    
-    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
-.kanit-heavy{
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-size:40px;
-    font-style:bold;
-    padding-top:30px;
+
+.graphics {
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    width: 15%;
+    height: 10%;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    object-fit: contain;
 }
 
 .text-body {
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    align-items: center;
+    flex: 1;
+    text-align: left;
+}
+
+.kanit-heavy {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: bold;
+    padding-top: 30px;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-align: left;
+}
+
+.text-left {
+    display: inline;
+}
+
+.projects-container + .projects-container {
+    margin-top: 3rem;
 }
 
 #logo {
     padding-right: 2rem;
     padding-left: 0;
 }
-.text-left{
-    display:inline;
-    
+
+#title {
+    margin-bottom: 3rem;
 }
 
-@media (max-width: 700px) {
-
+@media (max-width: 768px) {
     h1 {
         margin-top: 0;
     }
@@ -78,11 +100,23 @@ h1 {
     .projects-container {
         flex-direction: column;
         gap: 0;
+        margin-bottom: 0;
+        text-align: center;
     }
     
     .graphics {
-        max-height: 370px;
-        max-width: 400px;
+        width: 200px;
         margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .text-body {
+        align-items: center;
+    }
+
+    .kanit-light {
+        max-width: 75%;
+        text-align: center;
     }
 }

@@ -53,6 +53,7 @@ footer > img {
 .kanit-semibold {
     font-family: "Kanit", sans-serif;
     font-weight: 600;
+    font-size: 30px;
     font-style: normal; 
     color: white;
 }
@@ -60,6 +61,7 @@ footer > img {
 @media (max-width: 700px) {
     footer {
         height: 75px;
+        gap: 1rem;
     }
 
     footer > img {
@@ -74,5 +76,9 @@ footer > img {
     .western-logo {
         height: 45px;
         width: 40px;
+    }
+
+    .kanit-semibold {
+        font-size: 20px;
     }
 }

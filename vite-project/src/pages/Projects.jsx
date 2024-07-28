@@ -40,9 +40,8 @@ export default function Projects() {
         </div>
       </div>
 
-      <div>
-
-        <h1 class="kanit-heavy">Project List</h1>
+      <div className="projects-section">
+        <h1 class="kanit-heavy" id="title">Project List</h1>
         <div class="projects-container">
           <img class="graphics" src={internet} />
           <div class="text-body"><h1 class="kanit-medium">Website Development</h1><h2 class="kanit-light">Created by our talented students in Computer Science and software engineering </h2></div>
