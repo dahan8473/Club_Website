@@ -32,7 +32,7 @@ export default function Projects() {
           <div className="max-w-md">
             <h1
               class="heading1"
-              className="mb-5 text-5xl font-primary font-bold"
+              className="mb-5 text-5xl text-primary font-bold"
             >
               Projects
             </h1>
@@ -41,14 +41,14 @@ export default function Projects() {
         </div>
       </div>
       <div>
-        <h1 class="kanit-heavy">Project List</h1>
+        <h1 class="kanit-heavy text-primary">Project List</h1>
         <div class="projects-container">
           <div>
             <img class="graphics" src={internet} />
           </div>
 
           <div class="text-body">
-            <h2 class="kanit-medium">Website Development</h2>
+            <h2 class="kanit-medium text-primary">Website Development</h2>
             <h1 class="kanit-light">
               Created by our talented students in Computer Science and software
               engineering{" "}
@@ -57,7 +57,7 @@ export default function Projects() {
 
           <img class="graphics" src={gadget} />
           <div class="text-body">
-            <h2 class="kanit-medium">Custom Gadgets</h2>
+            <h2 class="kanit-medium text-primary">Custom Gadgets</h2>
             <h1 class="kanit-light">
               From remote controlled devices to customized Asthma Inhaler
               Counters, our engineering students can create customized gadgets
@@ -67,7 +67,7 @@ export default function Projects() {
 
           <img class="graphics" src={lightbulb} />
           <div class="text-body">
-            <h2 class="kanit-medium">Technology Workshops</h2>
+            <h2 class="kanit-medium text-primary">Technology Workshops</h2>
             <h1 class="kanit-light">
               Our students can help run technology workshops or education
               sessions for the community.{" "}
@@ -76,7 +76,7 @@ export default function Projects() {
 
           <img class="graphics" src={app} />
           <div class="text-body">
-            <h2 class="kanit-medium">Custom Applications</h2>
+            <h2 class="kanit-medium text-primary">Custom Applications</h2>
             <h1 class="kanit-light">
               We can create customized application for managing your databases.{" "}
             </h1>

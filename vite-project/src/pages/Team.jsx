@@ -23,7 +23,10 @@ export default function TeamPage() {
 
         <div className="hero-content text-neutral-content text-center relative z-10 pointer-events-auto">
           <div className="max-w-md">
-            <h1 class="heading" className="mb-5 text-5xl font-primary font-bold">
+            <h1
+              class="heading"
+              className="mb-5 text-5xl text-primary font-bold"
+            >
               Meet the Team
             </h1>
             <p class="subtitle">
@@ -66,11 +69,11 @@ export default function TeamPage() {
 function Team({ teamName, teamDesc }) {
   return (
     <div className="mt-7 m-5 px-4 py-8 bg-gray-100 shadow-lg rounded-lg">
-      <div className="mb-10 mt-5 ml-12">
-        <h2 className="text-4xl font-bold text-left text-nowrap mb-4">
+      <div className="mt-5 ml-12 flex flex-col">
+        <h2 className="text-4xl font-bold text-left mb-2 text-primary">
           {teamName}
         </h2>
-        <p className="italic text-gray text-left">{teamDesc}</p>
+        <p className="italic text-gray text-left mb-4">{teamDesc}</p>
       </div>
 
       <div className="flex justify-center">
