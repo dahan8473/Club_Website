@@ -1,0 +1,189 @@
+/* General Styles */
+.member.section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Container */
+.member__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Member Card */
+.member__content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.member__icon {
+  font-size: 2rem;
+  color: #1f7a8c;
+  margin-bottom: 1rem;
+
+}
+
+.member__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.member__subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.member__button {
+  font-size: 1rem;
+  color: #1f7a8c;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  transition: color 0.3s;
+}
+
+.member__button-icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.member__button:hover .member__button-icon {
+  transform: translateX(5px);
+}
+
+/* Modal */
+.member__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.active-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.member__modal-content {
+  position: relative;
+  background-color: #fff; /* Ensure the modal content background is white */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: #fff; /* Explicitly set the background to white */
+}
+
+.member__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.member__modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.member__modal-subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/* Modal Services List */
+.member__modal-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.member__modal-service {
+  display: flex;
+  align-items: center;
+}
+
+.member__modal-icon {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-right: 0.75rem;
+}
+
+.member__modal-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Remove Pseudo-Elements and Unnecessary Background Styles */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .member__container {
+      grid-template-columns: repeat(3, 218px);
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .member__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .member__content {
+      padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  }
+
+  .member__icon {
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .member__modal-content {
+      padding: 4.5rem 1.5rem 2.5rem;
+  }
+
+  .member__modal-description {
+      padding: 0;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .member__container {
+    grid-template-columns: max-content;
+  }
+
+  .member__content {
+      padding-right: 6rem;
+  }
+}

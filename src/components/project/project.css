@@ -1,0 +1,78 @@
+.project__container {
+  width: 100%; /* Adjusted to use percentage for responsive design */
+  cursor: pointer;
+}
+
+.project__card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 1.25rem;
+  border-radius: 1.25rem;
+  margin-bottom: var(--mb-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content within the card */
+  cursor: pointer;
+}
+
+.project__img {
+  width: 100%; /* Adjusted to 100% to scale with the container */
+  max-width: 300px; /* Set a max-width to control image size */
+  border-radius: 1rem;
+  margin-bottom: var(--mb-1);
+}
+
+.project__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+}
+
+.project__description {
+  font-size: var(--small-font-size);
+}
+
+/* Navigation buttons */
+.swiper-button-prev, .swiper-button-next {
+  color: var(--title-color); /* Adjust color as per your theme */
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+  height: auto;
+  padding: 0;
+  z-index: 10;
+  background-image: none; /* Remove default arrows */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Distance from the left edge */
+}
+
+.swiper-button-next {
+  right: 10px; /* Distance from the right edge */
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 20px; /* Adjust size accordingly */
+  content: '❮'; /* Use appropriate characters or icons */
+}
+
+.swiper-button-next::after {
+  content: '❯';
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  color: var(--hover-color); /* Color on hover */
+}
+
+/* Breakpoints */
+@media screen and (max-width: 992px) {
+  .project__container {
+      width: 100%; /* Adjust width for smaller screens */
+  }
+
+  .project__card {
+      padding: 1rem; /* Slightly reduce padding on smaller screens */
+  }
+}
