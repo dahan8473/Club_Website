@@ -71,7 +71,7 @@ const Member = () => {
           <div>
             <img src={justin} alt="Justin Oh" className="member__image" />
             <h3 className="member__title"> Justin Oh</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(2)} className="member__button">
@@ -93,7 +93,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Justin Oh</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
 
               <ul className="member__modal-services grid">
 
@@ -115,7 +115,7 @@ const Member = () => {
           <div>
             <img src={sarah} alt="Sarah Chiang" className="member__image" />
             <h3 className="member__title">Sarah Chiang</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(3)} className="member__button">
@@ -137,7 +137,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Sarah Chiang</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
 
               <ul className="member__modal-services grid">
 
@@ -158,7 +158,7 @@ const Member = () => {
           <div>
             <img src={ethan} alt="Ethan Liu" className="member__image" />
             <h3 className="member__title"> Ethan Liu</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(4)} className="member__button">
@@ -180,7 +180,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Ethan Liu</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
 
               <ul className="member__modal-services grid">
 
@@ -201,7 +201,7 @@ const Member = () => {
           <div>
             <img src={luca} alt="Luca Duarte" className="member__image" />
             <h3 className="member__title"> Luca Duarte</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(5)} className="member__button">
@@ -223,7 +223,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Luca Duarte</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
 
               <ul className="member__modal-services grid">
 
@@ -244,7 +244,7 @@ const Member = () => {
           <div>
             <img src={christopher} alt="Christopher Lam" className="member__image" />
             <h3 className="member__title">Christopher Lam</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(6)} className="member__button">
@@ -266,7 +266,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Christopher Lam</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">Project Manager</h4>
 
               <ul className="member__modal-services grid">
 
@@ -287,7 +287,7 @@ const Member = () => {
           <div>
             <img src={anthony} alt="Anthony Lam" className="member__image" />
             <h3 className="member__title">Anthony Lam</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(7)} className="member__button">
@@ -309,7 +309,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Anthony Lam</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">Project Manager</h4>
 
               <ul className="member__modal-services grid">
 
@@ -330,7 +330,7 @@ const Member = () => {
           <div>
             <img src={dev} alt="Dev Joshi" className="member__image" />
             <h3 className="member__title">Dev Joshi</h3>
-            <h4 className="member__subtitle">Co-Founder</h4>
+            <h4 className="member__subtitle">VP Finance</h4>
           </div>
 
           <span onClick={() => toggleTab(8)} className="member__button">
@@ -352,7 +352,7 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Dev Joshi</h3>
-              <h4 className="member__modal-subtitle">Co-Founder</h4>
+              <h4 className="member__modal-subtitle">VP Finance</h4>
 
               <ul className="member__modal-services grid">
 
