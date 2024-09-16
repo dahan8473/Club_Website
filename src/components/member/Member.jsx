@@ -71,7 +71,7 @@ const Member = () => {
           <div>
             <img src={justin} alt="Justin Oh" className="member__image" />
             <h3 className="member__title"> Justin Oh</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
+            <h4 className="member__subtitle">Co-Founder,  Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(2)} className="member__button">
