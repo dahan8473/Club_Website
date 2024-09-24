@@ -10,6 +10,13 @@
   color: #333;
 }
 
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  border-radius: 5px;
+}
+
 /* Container */
 .member__container {
   display: grid;
@@ -30,7 +37,6 @@
   font-size: 2rem;
   color: #1f7a8c;
   margin-bottom: 1rem;
-
 }
 
 .member__title {
@@ -79,7 +85,7 @@
   padding: 0 1rem;
   opacity: 0;
   visibility: hidden;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .active-modal {
@@ -143,12 +149,11 @@
 
 /* Remove Pseudo-Elements and Unnecessary Background Styles */
 
-
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
   .member__container {
-      grid-template-columns: repeat(3, 218px);
+    grid-template-columns: repeat(3, 218px);
   }
 }
 
@@ -159,21 +164,21 @@
   }
 
   .member__content {
-      padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
   }
 
   .member__icon {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .member__modal-content {
-      padding: 4.5rem 1.5rem 2.5rem;
+    padding: 4.5rem 1.5rem 2.5rem;
   }
 
   .member__modal-description {
-      padding: 0;
+    padding: 0;
   }
 }
 
@@ -184,6 +189,6 @@
   }
 
   .member__content {
-      padding-right: 6rem;
+    padding-right: 6rem;
   }
 }

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./member.css";
-import david from "../../assets/members/david liu.jpeg";
-import justin from "../../assets/members/justin oh.jpeg";
+import david from "../../assets/members/david liu.jpg";
+import justin from "../../assets/members/justin oh.jpg";
 import sarah from "../../assets/members/sarah chiang.jpeg";
-import ethan from "../../assets/members/ethan liu.jpeg";
+import ethan from "../../assets/members/ethan liu.jpg";
 import luca from "../../assets/members/luca duarte.jpeg";
-import christopher from "../../assets/members/christopher lam.jpeg";
-import anthony from "../../assets/members/anthony lam.jpeg";
-import dev from "../../assets/members/dev joshi.jpeg";
+import christopher from "../../assets/members/christopher lam.jpg";
+import anthony from "../../assets/members/anthony lam.jpg";
+import dev from "../../assets/members/dev joshi.jpg";
+import sachi from "../../assets/members/sachi sisodia.jpg";
+import trinity from "../../assets/members/trinity ung.jpg";
 
 const Member = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -21,7 +23,6 @@ const Member = () => {
       <h2 className="section__title">Our Team</h2>
 
       <div className="member__container container grid">
-        
         {/* Member 1 */}
         <div className="member__content">
           <div>
@@ -37,9 +38,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 1
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 1 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -49,29 +48,28 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">David Liu</h3>
-              <h4 className="member__modal-subtitle">Founder, Representative</h4>
+              <h4 className="member__modal-subtitle">
+                Founder, Representative
+              </h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Software Engineering
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
-
 
         {/* Member 2 */}
         <div className="member__content">
           <div>
             <img src={justin} alt="Justin Oh" className="member__image" />
             <h3 className="member__title"> Justin Oh</h3>
-            <h4 className="member__subtitle">Co-Founder,  Project Manager</h4>
+            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(2)} className="member__button">
@@ -81,9 +79,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 2
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 2 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -93,22 +89,22 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Justin Oh</h3>
-              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
+              <h4 className="member__modal-subtitle">
+                Co-Founder, Project Manager
+              </h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
-                    Major: 3rd Year Mechanical Engineering & A.I. Systems Engineering
+                    Major: 3rd Year Mechanical Engineering & A.I. Systems
+                    Engineering
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
-
 
         {/* Member 3 */}
         <div className="member__content">
@@ -125,9 +121,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 3
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 3 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -137,17 +131,17 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Sarah Chiang</h3>
-              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
+              <h4 className="member__modal-subtitle">
+                Co-Founder, Project Manager
+              </h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Computer Science
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -168,9 +162,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 4
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 4 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -180,17 +172,17 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Ethan Liu</h3>
-              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
+              <h4 className="member__modal-subtitle">
+                Co-Founder, Project Manager
+              </h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Software Engineering
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -211,9 +203,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 5
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 5 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -223,17 +213,17 @@ const Member = () => {
               ></i>
 
               <h3 className="member__modal-title">Luca Duarte</h3>
-              <h4 className="member__modal-subtitle">Co-Founder, Project Manager</h4>
+              <h4 className="member__modal-subtitle">
+                Co-Founder, Project Manager
+              </h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Computer Science
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -242,7 +232,11 @@ const Member = () => {
         {/* Member 6 */}
         <div className="member__content">
           <div>
-            <img src={christopher} alt="Christopher Lam" className="member__image" />
+            <img
+              src={christopher}
+              alt="Christopher Lam"
+              className="member__image"
+            />
             <h3 className="member__title">Christopher Lam</h3>
             <h4 className="member__subtitle">Project Manager</h4>
           </div>
@@ -254,9 +248,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 6
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 6 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -269,14 +261,12 @@ const Member = () => {
               <h4 className="member__modal-subtitle">Project Manager</h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Software Engineering
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -297,9 +287,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 7
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 7 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -312,14 +300,12 @@ const Member = () => {
               <h4 className="member__modal-subtitle">Project Manager</h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Software Engineering
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -340,9 +326,7 @@ const Member = () => {
 
           <div
             className={
-              toggleState === 8
-                ? "member__modal active-modal"
-                : "member__modal"
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -355,19 +339,94 @@ const Member = () => {
               <h4 className="member__modal-subtitle">VP Finance</h4>
 
               <ul className="member__modal-services grid">
-
                 <li className="member__modal-service">
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 2nd Year Business Management & Organizational Studies
                   </p>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
 
+        {/* Member 9 */}
+        <div className="member__content">
+          <div>
+            <img src={sachi} alt="Sachi Sisodia" className="member__image" />
+            <h3 className="member__title">Sachi Sisodia</h3>
+            <h4 className="member__subtitle">VP Community</h4>
+          </div>
+
+          <span onClick={() => toggleTab(8)} className="member__button">
+            View More
+            <i className="uil uil-arrow-right member__button-icon"></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+            }
+          >
+            <div className="member__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times member__modal-close"
+              ></i>
+
+              <h3 className="member__modal-title">Sachi Sisodia</h3>
+              <h4 className="member__modal-subtitle">VP Community</h4>
+
+              <ul className="member__modal-services grid">
+                <li className="member__modal-service">
+                  <i className="uil uil-check-circle member__modal-icon"></i>
+                  <p className="member__modal-info">
+                    Major: 2nd Year Computer Science
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Member 9 */}
+        <div className="member__content">
+          <div>
+            <img src={trinity} alt="Trinity Ung" className="member__image" />
+            <h3 className="member__title">Trinity Ung</h3>
+            <h4 className="member__subtitle">Project Manager</h4>
+          </div>
+
+          <span onClick={() => toggleTab(8)} className="member__button">
+            View More
+            <i className="uil uil-arrow-right member__button-icon"></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+            }
+          >
+            <div className="member__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times member__modal-close"
+              ></i>
+
+              <h3 className="member__modal-title">Trinity Ung</h3>
+              <h4 className="member__modal-subtitle">Project Manager</h4>
+
+              <ul className="member__modal-services grid">
+                <li className="member__modal-service">
+                  <i className="uil uil-check-circle member__modal-icon"></i>
+                  <p className="member__modal-info">
+                    Major: 3rd Year Computer Science
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
