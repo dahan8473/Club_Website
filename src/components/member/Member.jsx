@@ -11,7 +11,7 @@ import dev from "../../assets/members/dev joshi.jpg";
 import sachi from "../../assets/members/sachi sisodia.jpg";
 import trinity from "../../assets/members/trinity ung.jpg";
 import eva from "../../assets/members/eva lin.jpg";
-import james from "../../assets/members/nigah tariq.jpg";
+import james from "../../assets/members/james lee.jpg";
 import robin from "../../assets/members/robin lee.jpg";
 import nigah from "../../assets/members/nigah tariq.jpg";
 
