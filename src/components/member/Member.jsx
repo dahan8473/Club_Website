@@ -363,14 +363,14 @@ const Member = () => {
             <h4 className="member__subtitle">VP Community</h4>
           </div>
 
-          <span onClick={() => toggleTab(8)} className="member__button">
+          <span onClick={() => toggleTab(9)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+              toggleState === 9 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -402,14 +402,14 @@ const Member = () => {
             <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
-          <span onClick={() => toggleTab(8)} className="member__button">
+          <span onClick={() => toggleTab(10)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+              toggleState === 10 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -440,14 +440,14 @@ const Member = () => {
             <h4 className="member__subtitle">VP Outreach</h4>
           </div>
 
-          <span onClick={() => toggleTab(8)} className="member__button">
+          <span onClick={() => toggleTab(11)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+              toggleState === 11 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -479,14 +479,14 @@ const Member = () => {
             <h4 className="member__subtitle">VP Design</h4>
           </div>
 
-          <span onClick={() => toggleTab(8)} className="member__button">
+          <span onClick={() => toggleTab(12)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+              toggleState === 12 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -519,14 +519,14 @@ const Member = () => {
             <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
-          <span onClick={() => toggleTab(8)} className="member__button">
+          <span onClick={() => toggleTab(13)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+              toggleState === 13 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
@@ -560,14 +560,14 @@ const Member = () => {
             <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
-          <span onClick={() => toggleTab(8)} className="member__button">
+          <span onClick={() => toggleTab(14)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+              toggleState === 14 ? "member__modal active-modal" : "member__modal"
             }
           >
             <div className="member__modal-content">
