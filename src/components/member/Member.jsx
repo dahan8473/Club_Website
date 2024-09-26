@@ -10,6 +10,11 @@ import anthony from "../../assets/members/anthony lam.jpg";
 import dev from "../../assets/members/dev joshi.jpg";
 import sachi from "../../assets/members/sachi sisodia.jpg";
 import trinity from "../../assets/members/trinity ung.jpg";
+import eva from "../../assets/members/eva lin.jpg";
+import james from "../../assets/members/nigah tariq.jpg";
+import robin from "../../assets/members/robin lee.jpg";
+import nigah from "../../assets/members/nigah tariq.jpg";
+
 
 const Member = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -389,7 +394,7 @@ const Member = () => {
           </div>
         </div>
 
-        {/* Member 9 */}
+        {/* Member 10 */}
         <div className="member__content">
           <div>
             <img src={trinity} alt="Trinity Ung" className="member__image" />
@@ -421,6 +426,164 @@ const Member = () => {
                   <i className="uil uil-check-circle member__modal-icon"></i>
                   <p className="member__modal-info">
                     Major: 3rd Year Computer Science
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+ {/* Member 11 */}
+ <div className="member__content">
+          <div>
+            <img src={eva} alt="Eva Lin" className="member__image" />
+            <h3 className="member__title">Eva Lin</h3>
+            <h4 className="member__subtitle">VP Outreach</h4>
+          </div>
+
+          <span onClick={() => toggleTab(8)} className="member__button">
+            View More
+            <i className="uil uil-arrow-right member__button-icon"></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+            }
+          >
+            <div className="member__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times member__modal-close"
+              ></i>
+
+              <h3 className="member__modal-title">Eva Lin</h3>
+              <h4 className="member__modal-subtitle">VP Outreach</h4>
+
+              <ul className="member__modal-services grid">
+                <li className="member__modal-service">
+                  <i className="uil uil-check-circle member__modal-icon"></i>
+                  <p className="member__modal-info">
+                    Major: HBA 1
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Member 12 */}
+ <div className="member__content">
+          <div>
+            <img src={nigah} alt="Nigah Tariq" className="member__image" />
+            <h3 className="member__title">Nigah Tariq</h3>
+            <h4 className="member__subtitle">VP Design</h4>
+          </div>
+
+          <span onClick={() => toggleTab(8)} className="member__button">
+            View More
+            <i className="uil uil-arrow-right member__button-icon"></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+            }
+          >
+            <div className="member__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times member__modal-close"
+              ></i>
+
+              <h3 className="member__modal-title">Nigah Tariq</h3>
+              <h4 className="member__modal-subtitle">VP Design</h4>
+
+              <ul className="member__modal-services grid">
+                <li className="member__modal-service">
+                  <i className="uil uil-check-circle member__modal-icon"></i>
+                  <p className="member__modal-info">
+                    Major: 2nd Year Computer Science
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+{/* Member 13 */}
+<div className="member__content">
+          <div>
+            <img src={robin} alt="Robin Lee" className="member__image" />
+            <h3 className="member__title">Robin Lee</h3>
+            <h4 className="member__subtitle">Project Manager</h4>
+          </div>
+
+          <span onClick={() => toggleTab(8)} className="member__button">
+            View More
+            <i className="uil uil-arrow-right member__button-icon"></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+            }
+          >
+            <div className="member__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times member__modal-close"
+              ></i>
+
+              <h3 className="member__modal-title">Robin Lee</h3>
+              <h4 className="member__modal-subtitle">Project Manager</h4>
+
+              <ul className="member__modal-services grid">
+                <li className="member__modal-service">
+                  <i className="uil uil-check-circle member__modal-icon"></i>
+                  <p className="member__modal-info">
+                    Major: 3rd Year Computer Science
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        {/* Member 14 */}
+<div className="member__content">
+          <div>
+            <img src={james} alt="James Lee" className="member__image" />
+            <h3 className="member__title">James Lee</h3>
+            <h4 className="member__subtitle">Project Manager</h4>
+          </div>
+
+          <span onClick={() => toggleTab(8)} className="member__button">
+            View More
+            <i className="uil uil-arrow-right member__button-icon"></i>
+          </span>
+
+          <div
+            className={
+              toggleState === 8 ? "member__modal active-modal" : "member__modal"
+            }
+          >
+            <div className="member__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times member__modal-close"
+              ></i>
+
+              <h3 className="member__modal-title">James Lee</h3>
+              <h4 className="member__modal-subtitle">Project Manager</h4>
+
+              <ul className="member__modal-services grid">
+                <li className="member__modal-service">
+                  <i className="uil uil-check-circle member__modal-icon"></i>
+                  <p className="member__modal-info">
+                    Major: 3rd Year Software Engineering
                   </p>
                 </li>
               </ul>
