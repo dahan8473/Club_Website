@@ -28,12 +28,13 @@ const Member = () => {
       <h2 className="section__title">Our Team</h2>
 
       <div className="member__container container grid">
+
         {/* Member 1 */}
         <div className="member__content">
           <div>
             <img src={david} alt="David Liu" className="member__image" />
             <h3 className="member__title"> David Liu</h3>
-            <h4 className="member__subtitle">Founder, Representative</h4>
+            <h4 className="member__subtitle">Founder, President</h4>
           </div>
 
           <span onClick={() => toggleTab(1)} className="member__button">
@@ -74,7 +75,7 @@ const Member = () => {
           <div>
             <img src={justin} alt="Justin Oh" className="member__image" />
             <h3 className="member__title"> Justin Oh</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
+            <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(2)} className="member__button">
@@ -112,11 +113,12 @@ const Member = () => {
         </div>
 
         {/* Member 3 */}
+        {/* get yo headshot in pls
         <div className="member__content">
           <div>
             <img src={sarah} alt="Sarah Chiang" className="member__image" />
             <h3 className="member__title">Sarah Chiang</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
+            <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(3)} className="member__button">
@@ -151,13 +153,13 @@ const Member = () => {
             </div>
           </div>
         </div>
-
+        */}
         {/* Member 4 */}
         <div className="member__content">
           <div>
             <img src={ethan} alt="Ethan Liu" className="member__image" />
             <h3 className="member__title"> Ethan Liu</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
+            <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(4)} className="member__button">
@@ -198,7 +200,7 @@ const Member = () => {
           <div>
             <img src={luca} alt="Luca Duarte" className="member__image" />
             <h3 className="member__title"> Luca Duarte</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager</h4>
+            <h4 className="member__subtitle">Project Manager</h4>
           </div>
 
           <span onClick={() => toggleTab(5)} className="member__button">
@@ -432,46 +434,9 @@ const Member = () => {
             </div>
           </div>
         </div>
- {/* Member 11 */}
- <div className="member__content">
-          <div>
-            <img src={eva} alt="Eva Lin" className="member__image" />
-            <h3 className="member__title">Eva Lin</h3>
-            <h4 className="member__subtitle">VP Outreach</h4>
-          </div>
 
-          <span onClick={() => toggleTab(11)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
 
-          <div
-            className={
-              toggleState === 11 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Eva Lin</h3>
-              <h4 className="member__modal-subtitle">VP Outreach</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: HBA 1
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 12 */}
+        {/* Member 11 */}
  <div className="member__content">
           <div>
             <img src={nigah} alt="Nigah Tariq" className="member__image" />
@@ -511,7 +476,7 @@ const Member = () => {
         </div>
 
 
-{/* Member 13 */}
+{/* Member 12 */}
 <div className="member__content">
           <div>
             <img src={robin} alt="Robin Lee" className="member__image" />
@@ -552,7 +517,7 @@ const Member = () => {
 
 
 
-        {/* Member 14 */}
+        {/* Member 13 */}
 <div className="member__content">
           <div>
             <img src={james} alt="James Lee" className="member__image" />
