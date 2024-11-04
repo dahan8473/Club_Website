@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 
 .home__logo-gif {
-  width: 650px; 
-  height: auto;
-  margin: auto 0;
+  width: 100%; /* Responsive width */
+  max-width: 650px; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+/* Media queries to control behavior on smaller screens */
+@media screen and (max-width: 768px) {
+  .home__logo-gif {
+    width: 90%; /* Slightly larger on smaller screens */
+    max-width: 500px; /* Adjust max width */
+  }
 }
 
 body, html {
@@ -14,12 +23,17 @@ body, html {
 }
 
 .home__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; 
-  height: 100%;
-  text-align: center; 
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  flex-direction: column; /* Stack items vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text */
+}
+.home__content {
+  display: flex; /* Flexbox for content */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
 }
 
 .home__title {
