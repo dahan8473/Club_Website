@@ -30,12 +30,13 @@ const Member = () => {
       <h2 className="section__title">Our Team</h2>
 
       <div className="member__container container grid">
+
         {/* Member 1 */}
         <div className="member__content">
           <div>
             <img src={david} alt="David Liu" className="member__image" />
             <h3 className="member__title"> David Liu</h3>
-            <h4 className="member__subtitle">Founder, Representative</h4>
+            <h4 className="member__subtitle">Founder, President</h4>
           </div>
 
           <span onClick={() => toggleTab(1)} className="member__button">
@@ -114,6 +115,7 @@ const Member = () => {
         </div>
 
         {/* Member 3 */}
+        {/* get yo headshot in pls
         <div className="member__content">
           <div>
             <img src={sarah} alt="Sarah Chiang" className="member__image" />
@@ -153,7 +155,7 @@ const Member = () => {
             </div>
           </div>
         </div>
-
+        */}
         {/* Member 4 */}
         <div className="member__content">
           <div>
@@ -366,12 +368,14 @@ const Member = () => {
           </div>
 
           <span onClick={() => toggleTab(9)} className="member__button">
+          <span onClick={() => toggleTab(9)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
+              toggleState === 9 ? "member__modal active-modal" : "member__modal"
               toggleState === 9 ? "member__modal active-modal" : "member__modal"
             }
           >
@@ -397,6 +401,7 @@ const Member = () => {
         </div>
 
         {/* Member 10 */}
+        {/* Member 10 */}
         <div className="member__content">
           <div>
             <img src={trinity} alt="Trinity Ung" className="member__image" />
@@ -405,12 +410,14 @@ const Member = () => {
           </div>
 
           <span onClick={() => toggleTab(10)} className="member__button">
+          <span onClick={() => toggleTab(10)} className="member__button">
             View More
             <i className="uil uil-arrow-right member__button-icon"></i>
           </span>
 
           <div
             className={
+              toggleState === 10 ? "member__modal active-modal" : "member__modal"
               toggleState === 10 ? "member__modal active-modal" : "member__modal"
             }
           >

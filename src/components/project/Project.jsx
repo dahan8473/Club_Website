@@ -14,7 +14,7 @@ import { Pagination } from "swiper/modules";
 const Project = () => {
   return (
     <section className="project container section" id="project">
-      <h2 className="section__title">Projects</h2>
+      <h2 className="section__title">Past Projects</h2>
 
       <Swiper
         className="project__container"
