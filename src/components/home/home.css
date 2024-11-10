@@ -23,17 +23,12 @@ body, html {
 }
 
 .home__container {
-  display: flex; /* Flexbox layout */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  flex-direction: column; /* Stack items vertically */
-  height: 100vh; /* Full viewport height */
-  text-align: center; /* Center text */
-}
-.home__content {
-  display: flex; /* Flexbox for content */
-  flex-direction: column; /* Column layout */
-  align-items: center; /* Center items horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  height: 100%;
+  text-align: center; 
 }
 
 .home__title {
