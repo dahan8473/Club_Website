@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./member.css";
 import david from "../../assets/members/david liu.jpg";
 import justin from "../../assets/members/justin oh.jpg";
-import sarah from "../../assets/members/sarah chiang.jpeg";
+import sarah from "../../assets/members/sarah chiang.jpg";
 import ethan from "../../assets/members/ethan liu.jpg";
 import luca from "../../assets/members/luca duarte.jpeg";
 import christopher from "../../assets/members/christopher lam.jpg";
@@ -11,7 +11,7 @@ import dev from "../../assets/members/dev joshi.jpg";
 import sachi from "../../assets/members/sachi sisodia.jpg";
 import trinity from "../../assets/members/trinity ung.jpg";
 
-import james from "../../assets/members/nigah tariq.jpg";
+import james from "../../assets/members/james lee.jpg";
 import robin from "../../assets/members/robin lee.jpg";
 import nigah from "../../assets/members/nigah tariq.jpg";
 
@@ -114,8 +114,8 @@ const Member = () => {
           </div>
         </div>
 
-        {/* Member 3 */}
-        {/* get yo headshot in pls
+        
+       
         <div className="member__content">
           <div>
             <img src={sarah} alt="Sarah Chiang" className="member__image" />
@@ -155,7 +155,7 @@ const Member = () => {
             </div>
           </div>
         </div>
-        */}
+       
         {/* Member 4 */}
         <div className="member__content">
           <div>
@@ -477,8 +477,8 @@ const Member = () => {
             </div>
           </div>
         </div>
- 
-        {/* Member 12 */}
+ {/*
+        {/* Member 12 
  <div className="member__content">
           <div>
             <img src={nigah} alt="Nigah Tariq" className="member__image" />
@@ -516,7 +516,7 @@ const Member = () => {
             </div>
           </div>
         </div>
-
+*/}
 
 {/* Member 13 */}
 <div className="member__content">

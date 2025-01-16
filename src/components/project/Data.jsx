@@ -23,6 +23,7 @@ export const Data = [
     title: "Brand Design",
     category: "design",
   },
+  
 ];
 
 export const NavigationModule = ({ slidesData }) => {
