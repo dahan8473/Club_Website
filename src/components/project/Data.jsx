@@ -6,6 +6,7 @@ import Project5 from "../../assets/projects/project5.jpg";
 import Team5 from "../../assets/projects/team5.png";
 
 export const Data = [
+  {/*
   {
     id: 1,
     image: Project1,
@@ -24,6 +25,7 @@ export const Data = [
     title: "Brand Design",
     category: "design",
   },
+  */},
   {
     id: 5,
     image: Team5,
