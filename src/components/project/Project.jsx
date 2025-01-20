@@ -34,11 +34,17 @@ const Project = () => {
         }}
         modules={[Pagination]}
       >
-        {Data.map(({ id, image, title, description }) => {
+        {Data.map(({ id, image, title, description, link }) => {
           return (
             <SwiperSlide className="project__card" key={id}>
-              <img src={image} alt="" className="project__img" />
-
+              {link ? (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <img src={image} alt="" className="project__img" />
+                </a>
+              ) : (
+                <img src={image} alt="" className="project__img" />
+              )}
+            
               <h3 className="project__name">{title}</h3>
               <p className="project__description">{description}</p>
             </SwiperSlide>

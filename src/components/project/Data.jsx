@@ -3,6 +3,7 @@ import Project2 from "../../assets/projects/project2.jpg";
 import Project3 from "../../assets/projects/project3.jpg";
 import Project4 from "../../assets/projects/project4.jpg";
 import Project5 from "../../assets/projects/project5.jpg";
+import Team5 from "../../assets/projects/team5.png";
 
 export const Data = [
   {
@@ -23,7 +24,14 @@ export const Data = [
     title: "Brand Design",
     category: "design",
   },
-  
+  {
+    id: 5,
+    image: Team5,
+    title: "Team 5 United Way Elgin-Middlesex",
+    category: "web",
+    link: "https://jxohg.github.io/leaderboard-app",
+  },
+
 ];
 
 export const NavigationModule = ({ slidesData }) => {
@@ -48,13 +56,21 @@ export const NavigationModule = ({ slidesData }) => {
       }}
       modules={[Pagination, Navigation]} // Add Navigation to the modules array
     >
-      {slidesData.map(({ id, image, title, description }) => (
+      {slidesData.map(({ id, image, title, description, link }) => (
         <SwiperSlide key={id}>
-          <img src={image} alt={title} className="navigation__img" />
+          {link ? (
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <img src={image} alt={title} className="navigation__img" />
+            </a>
+          ) : (
+            <img src={image} alt={title} className="navigation__img" />
+          )}
           <h3>{title}</h3>
           <p>{description}</p>
         </SwiperSlide>
-      ))}
-    </Swiper>
+
+      ))
+      }
+    </Swiper >
   );
 };
