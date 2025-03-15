@@ -10,185 +10,135 @@
   color: #333;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover; /* Ensures the image covers the entire area */
-  border-radius: 5px;
+/* Year & Term Selector */
+.year-selector,
+.term-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Container */
-.member__container {
+.year-button,
+.term-button {
+  background-color: #f0f0f0;
+  border: 1px solid #1f7a8c;
+  color: #1f7a8c;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem; 
+  font-weight: 600;  
+  font-family: inherit; 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.year-button.active,
+.term-button.active {
+  background-color: #1f7a8c;
+  color: white;
+}
+
+.year-button:hover,
+.term-button:hover {
+  background-color: #1f7a8c;
+  color: white;
+}
+
+/* Project TBA */
+.tba-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #777;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Project Group */
+.project-group {
+  margin-top: 3rem; 
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f7a8c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Member Cards Row */
+.member-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 220px); 
+  justify-content: center;
+  justify-items: center;
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Member Card */
 .member__content {
   background-color: #fff;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+  text-align: center;
+  width: 220px;
+  height: 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.member__icon {
-  font-size: 2rem;
-  color: #1f7a8c;
-  margin-bottom: 1rem;
+/* Member Image */
+.member__image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
+/* Member Name */
 .member__title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #333;
+  margin-top: 1.5rem;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  max-width: 180px;
 }
 
+
+/* Member Subtitle (Role) */
 .member__subtitle {
   font-size: 1rem;
   color: #777;
-  margin-bottom: 1.5rem;
 }
 
-.member__button {
-  font-size: 1rem;
-  color: #1f7a8c;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  margin-top: 1rem;
-  transition: color 0.3s;
-}
-
-.member__button-icon {
-  margin-left: 0.5rem;
-  transition: transform 0.3s;
-}
-
-.member__button:hover .member__button-icon {
-  transform: translateX(5px);
-}
-
-/* Modal */
-.member__modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: var(--z-modal);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-
-.active-modal {
-  visibility: visible;
-  opacity: 1;
-}
-
-.member__modal-content {
-  position: relative;
-  background-color: #fff; /* Ensure the modal content background is white */
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background: #fff; /* Explicitly set the background to white */
-}
-
-.member__modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  color: #333;
-  cursor: pointer;
-}
-
-.member__modal-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.member__modal-subtitle {
-  font-size: 1rem;
-  color: #777;
-  margin-bottom: 2rem;
-}
-
-/* Modal Services List */
-.member__modal-services {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.member__modal-service {
-  display: flex;
-  align-items: center;
-}
-
-.member__modal-icon {
-  font-size: 1.25rem;
-  color: #007bff;
-  margin-right: 0.75rem;
-}
-
-.member__modal-info {
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Remove Pseudo-Elements and Unnecessary Background Styles */
-
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* Responsive Design */
 @media screen and (max-width: 992px) {
-  .member__container {
-    grid-template-columns: repeat(3, 218px);
+  .member-row {
+    grid-template-columns: repeat(3, 220px); /* 3 members per row */
   }
 }
 
-/* For medium devices */
 @media screen and (max-width: 768px) {
-  .member__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .member__content {
-    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
-  }
-
-  .member__icon {
-    font-size: 1.5rem;
+  .member-row {
+    grid-template-columns: repeat(2, 220px); /* 2 members per row */
   }
 }
 
 @media screen and (max-width: 576px) {
-  .member__modal-content {
-    padding: 4.5rem 1.5rem 2.5rem;
-  }
-
-  .member__modal-description {
-    padding: 0;
-  }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-  .member__container {
-    grid-template-columns: max-content;
-  }
-
-  .member__content {
-    padding-right: 6rem;
+  .member-row {
+    grid-template-columns: repeat(1, 220px); /* 1 member per row */
   }
 }

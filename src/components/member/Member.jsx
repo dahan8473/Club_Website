@@ -1,602 +1,193 @@
 import React, { useState } from "react";
 import "./member.css";
 import david from "../../assets/members/david liu.jpg";
-import justin from "../../assets/members/justin oh.jpg";
 import sarah from "../../assets/members/sarah chiang.jpg";
+import trinity from "../../assets/members/trinity ung.jpg";
 import ethan from "../../assets/members/ethan liu.jpg";
+import jack from "../../assets/members/Jack Hogan.jpeg";
+import justin from "../../assets/members/justin oh.jpg";
 import luca from "../../assets/members/luca duarte.jpeg";
+import robin from "../../assets/members/robin lee.jpg";
+import james from "../../assets/members/james lee.jpg";
 import christopher from "../../assets/members/christopher lam.jpg";
 import anthony from "../../assets/members/anthony lam.jpg";
 import dev from "../../assets/members/dev joshi.jpg";
 import sachi from "../../assets/members/sachi sisodia.jpg";
-import trinity from "../../assets/members/trinity ung.jpg";
+import logo from "../../assets/members/logo.png";
 
-import james from "../../assets/members/james lee.jpg";
-import robin from "../../assets/members/robin lee.jpg";
-import nigah from "../../assets/members/nigah tariq.jpg";
+const membersData = {
+  "2024-2025": {
+    "Fall Term": [
+      
+      { name: "Sarah Chiang", role: "Project Manager", project: "GO Hockey", img: sarah },
+      { name: "Trinity Ung", role: "Project Manager", project: "GO Hockey", img: trinity },
+      { name: "Clayton McCormack", role: "Developer", project: "GO Hockey", img: logo },
+      { name: "Daniel Antal", role: "Developer", project: "GO Hockey", img: logo },
+      { name: "Ivory Huo", role: "Developer", project: "GO Hockey", img: logo },
+      { name: "Noah Kostesku", role: "Developer", project: "GO Hockey", img: logo },
 
-import jack from "../../assets/members/Jack Hogan.jpeg"
+      { name: "Ethan Liu", role: "Project Manager", project: "JAM", img: ethan },
+      { name: "Jack Hogan", role: "Project Manager", project: "JAM", img: jack },
+      { name: "Alan Sanjit", role: "Developer", project: "JAM", img: logo },
+      { name: "Michelle Li", role: "Developer", project: "JAM", img: logo },
+      { name: "Omar Hossain", role: "Developer", project: "JAM", img: logo },
+      { name: "Seabar Omarzadeh", role: "Developer", project: "JAM", img: logo },
 
+      { name: "Justin Oh", role: "Project Manager", project: "United Way", img: justin },
+      { name: "Luca Duarte", role: "Project Manager", project: "United Way", img: luca },
+      { name: "Andy Hwang", role: "Developer", project: "United Way", img: logo },
+      { name: "Adeline Lue Sang", role: "Developer", project: "United Way", img: logo },
+      { name: "Cadence McGillicuddy", role: "Developer", project: "United Way", img: logo },
+      { name: "Jack Fedash", role: "Developer", project: "United Way", img: logo },
+
+      { name: "Robin Lee", role: "Project Manager", project: "TREA", img: robin },
+      { name: "Aidan Naccarato", role: "Developer", project: "TREA", img: logo },
+      { name: "Justin Rowbotham", role: "Developer", project: "TREA", img: logo },
+      { name: "Minaal Ali", role: "Developer", project: "TREA", img: logo },
+      { name: "Rameez Mufti", role: "Developer", project: "TREA", img: logo },
+
+      { name: "Anthony Lam", role: "Project Manager", project: "BGC", img: anthony },
+      { name: "Guojia La", role: "Developer", project: "BGC", img: logo },
+      { name: "Kayden Jaffer", role: "Developer", project: "BGC", img: logo },
+      { name: "Rosa Scully", role: "Developer", project: "BGC", img: logo },
+ 
+      { name: "James Lee", role: "Project Manager", project: "YOU", img: james },
+      { name: "Christopher Lam", role: "Project Manager", project: "YOU", img: christopher },
+      { name: "Ethan Bhalla", role: "Developer", project: "YOU", img: logo },
+      { name: "Hadi Youssef", role: "Developer", project: "YOU", img: logo },
+      { name: "Het Patel", role: "Developer", project: "YOU", img: logo },
+      { name: "Jack Branston", role: "Developer", project: "YOU", img: logo },
+
+      { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
+      { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
+      { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
+    ],
+
+    "Winter Term": [
+
+      { name: "Sarah Chiang", role: "Project Manager", project: "FINANCE4HER", img: sarah },
+      { name: "Trinity Ung", role: "Project Manager", project: "FINANCE4HER", img: trinity },
+      { name: "Abdullah Imran", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Issar Manknojyia", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Mariappan Vineeth", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Zalak Hansoti", role: "Developer", project: "FINANCE4HER", img: logo },
+
+      { name: "Anthony Lam", role: "Project Manager", project: "Empower Health", img: anthony },
+      { name: "Shivali Sharma", role: "Project Manager", project: "Empower Health", img: logo },
+      { name: "Aditi Bhardwaj", role: "Developer", project: "Empower Health", img: logo },
+      { name: "Dylan Wettlaufer", role: "Developer", project: "Empower Health", img: logo },
+      { name: "Jade Liu", role: "Developer", project: "Empower Health", img: logo },
+      { name: "Pranav Chopra", role: "Developer", project: "Empower Health", img: logo },
+      { name: "Sarah Solaiman", role: "Developer", project: "Empower Health", img: logo },
+
+      { name: "Justin Oh", role: "Project Manager", project: "Passion for Parkinson's", img: justin },
+      { name: "Thomas Llamzon", role: "Project Manager", project: "Passion for Parkinson's", img: logo },
+      { name: "Adeline Lue Sang", role: "Developer", project: "Passion for Parkinson's", img: logo },
+      { name: "Andres Pedreros Castro", role: "Developer", project: "Passion for Parkinson's", img: logo },
+      { name: "Ethan Ung", role: "Developer", project: "Passion for Parkinson's", img: logo },
+      { name: "Harry Yang", role: "Developer", project: "Passion for Parkinson's", img: logo },
+      { name: "Kenneth Li", role: "Developer", project: "Passion for Parkinson's", img: logo },
+
+      { name: "David Liu", role: "Project Manager", project: "Fund Homecare", img: logo },
+      { name: "Parneet Baidwan", role: "Project Manager", project: "Fund Homecare", img: logo },
+      { name: "Johnathan Lam", role: "Developer", project: "Fund Homecare", img: logo },
+      { name: "Samuel Joseph Humphrey", role: "Developer", project: "Fund Homecare", img: logo },
+      { name: "Shayo Olaiya", role: "Developer", project: "Fund Homecare", img: logo },
+      { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: logo },
+
+      { name: "Noah Kosteku", role: "Project Manager", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Stephanie Li", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Carmen Choi", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Joanna Cui", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Justin Chow", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Prabnoor Multani", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
+
+      { name: "Luca Duarte", role: "Project Manager", project: "Fund Homecare Scraper", img: luca },
+      { name: "Robin Lee", role: "Developer", project: "Fund Homecare Scraper", img: robin },
+      { name: "Adit Bhimani", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+      { name: "Cameron Ollerhead", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+      { name: "Justin Rowbotham", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+      { name: "Lucian Lavric ", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+      { name: "Vidhi Kothawala", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+
+      { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
+      { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
+      { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
+
+    ],
+
+    "Summer Term": [],
+  },
+  "2025-2026": {
+    "Fall Term": [],
+    "Winter Term": [],
+    "Summer Term": [],
+  },
+};
 
 const Member = () => {
-  const [toggleState, setToggleState] = useState(0);
+  const [selectedYear, setSelectedYear] = useState("2024-2025");
+  const [selectedTerm, setSelectedTerm] = useState("Winter Term");
 
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+  // Get members for the selected year and term
+  const selectedMembers = membersData[selectedYear][selectedTerm];
+
+  // Group members by project
+  const groupedMembers = selectedMembers.reduce((acc, member) => {
+    const projectKey = member.project;
+    if (!acc[projectKey]) acc[projectKey] = [];
+    acc[projectKey].push(member);
+    return acc;
+  }, {});
 
   return (
     <section className="member section" id="member">
       <h2 className="section__title">Our Team</h2>
 
-      <div className="member__container container grid">
-
-        {/* Member 1 */}
-        <div className="member__content">
-          <div>
-            <img src={david} alt="David Liu" className="member__image" />
-            <h3 className="member__title"> David Liu</h3>
-            <h4 className="member__subtitle">Founder, President</h4>
-          </div>
-
-          <span onClick={() => toggleTab(1)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 1 ? "member__modal active-modal" : "member__modal"
-            }
+      <div className="year-selector">
+        {Object.keys(membersData).map((year) => (
+          <button
+            key={year}
+            className={`year-button ${selectedYear === year ? "active" : ""}`}
+            onClick={() => setSelectedYear(year)}
           >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
+            {year}
+          </button>
+        ))}
+      </div>
 
-              <h3 className="member__modal-title">David Liu</h3>
-              <h4 className="member__modal-subtitle">
-                Founder, Representative
-              </h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Software Engineering
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 2 */}
-        <div className="member__content">
-          <div>
-            <img src={justin} alt="Justin Oh" className="member__image" />
-            <h3 className="member__title"> Justin Oh</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager: Team 5</h4>
-          </div>
-
-          <span onClick={() => toggleTab(2)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 2 ? "member__modal active-modal" : "member__modal"
-            }
+      <div className="term-selector">
+        {Object.keys(membersData[selectedYear]).map((term) => (
+          <button
+            key={term}
+            className={`term-button ${selectedTerm === term ? "active" : ""}`}
+            onClick={() => setSelectedTerm(term)}
           >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
+            {term}
+          </button>
+        ))}
+      </div>
 
-              <h3 className="member__modal-title">Justin Oh</h3>
-              <h4 className="member__modal-subtitle">
-                Co-Founder, Project Manager
-              </h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Mechanical Engineering & A.I. Systems
-                    Engineering
-                  </p>
-                </li>
-              </ul>
+      <div className="member__container">
+        {selectedMembers.length === 0 ? (
+          <h3 className="tba-text">TBA</h3> // Display TBA if no members exist
+        ) : (
+          Object.entries(groupedMembers).map(([project, members]) => (
+            <div key={project} className="project-group">
+              <h3 className="project-title">{project}</h3>
+              <div className="member-row">
+                {members.map((member, index) => (
+                  <div className="member__content" key={index}>
+                    <img src={member.img} alt={member.name} className="member__image" />
+                    <h3 className="member__title">{member.name}</h3>
+                    <h4 className="member__subtitle">{member.role}</h4>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
-
-        
-       
-        <div className="member__content">
-          <div>
-            <img src={sarah} alt="Sarah Chiang" className="member__image" />
-            <h3 className="member__title">Sarah Chiang</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager: Team 7</h4>
-          </div>
-
-          <span onClick={() => toggleTab(3)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 3 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Sarah Chiang</h3>
-              <h4 className="member__modal-subtitle">
-                Co-Founder, Project Manager
-              </h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Computer Science
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-       
-        {/* Member 4 */}
-        <div className="member__content">
-          <div>
-            <img src={ethan} alt="Ethan Liu" className="member__image" />
-            <h3 className="member__title"> Ethan Liu</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager: Team 6</h4>
-          </div>
-
-          <span onClick={() => toggleTab(4)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 4 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Ethan Liu</h3>
-              <h4 className="member__modal-subtitle">
-                Co-Founder, Project Manager
-              </h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Software Engineering
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 5 */}
-        <div className="member__content">
-          <div>
-            <img src={luca} alt="Luca Duarte" className="member__image" />
-            <h3 className="member__title"> Luca Duarte</h3>
-            <h4 className="member__subtitle">Co-Founder, Project Manager:Team 5</h4>
-          </div>
-
-          <span onClick={() => toggleTab(5)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 5 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Luca Duarte</h3>
-              <h4 className="member__modal-subtitle">
-                Co-Founder, Project Manager
-              </h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Computer Science
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 6 */}
-        <div className="member__content">
-          <div>
-            <img
-              src={christopher}
-              alt="Christopher Lam"
-              className="member__image"
-            />
-            <h3 className="member__title">Christopher Lam</h3>
-            <h4 className="member__subtitle">Project Manager Team: 2 </h4>
-          </div>
-
-          <span onClick={() => toggleTab(6)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 6 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Christopher Lam</h3>
-              <h4 className="member__modal-subtitle">Project Manager</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Software Engineering
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 7 */}
-        <div className="member__content">
-          <div>
-            <img src={anthony} alt="Anthony Lam" className="member__image" />
-            <h3 className="member__title">Anthony Lam</h3>
-            <h4 className="member__subtitle">Project Manager: Team 1 & 3</h4>
-          </div>
-
-          <span onClick={() => toggleTab(7)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 7 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Anthony Lam</h3>
-              <h4 className="member__modal-subtitle">Project Manager</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Software Engineering
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 8 */}
-        <div className="member__content">
-          <div>
-            <img src={dev} alt="Dev Joshi" className="member__image" />
-            <h3 className="member__title">Dev Joshi</h3>
-            <h4 className="member__subtitle">VP Finance</h4>
-          </div>
-
-          <span onClick={() => toggleTab(8)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 8 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Dev Joshi</h3>
-              <h4 className="member__modal-subtitle">VP Finance</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 2nd Year Business Management & Organizational Studies
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Member 9 */}
-        <div className="member__content">
-          <div>
-            <img src={sachi} alt="Sachi Sisodia" className="member__image" />
-            <h3 className="member__title">Sachi Sisodia</h3>
-            <h4 className="member__subtitle">VP Community</h4>
-          </div>
-
-          <span onClick={() => toggleTab(9)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 9 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Sachi Sisodia</h3>
-              <h4 className="member__modal-subtitle">VP Community</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 2nd Year Computer Science
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-       
-        {/* Member 10 */}
-        <div className="member__content">
-          <div>
-            <img src={trinity} alt="Trinity Ung" className="member__image" />
-            <h3 className="member__title">Trinity Ung</h3>
-            <h4 className="member__subtitle">Project Manager: Team 7</h4>
-          </div>
-
-
-          <span onClick={() => toggleTab(10)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 10 ? "member__modal active-modal" : "member__modal"
-             
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Trinity Ung</h3>
-              <h4 className="member__modal-subtitle">Project Manager Team 7</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Computer Science
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-         {/* Member 11 */}
- <div className="member__content">
-          <div>
-            <img src={jack} alt="Jack Hogan" className="member__image" />
-            <h3 className="member__title">Jack Hogan</h3>
-            <h4 className="member__subtitle">Project Manager: Team 6</h4>
-          </div>
-
-          <span onClick={() => toggleTab(11)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 11 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Jack Hogan</h3>
-              <h4 className="member__modal-subtitle">Project Manager</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd year Software Engineering
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
- {/*
-        {/* Member 12 
- <div className="member__content">
-          <div>
-            <img src={nigah} alt="Nigah Tariq" className="member__image" />
-            <h3 className="member__title">Nigah Tariq</h3>
-            <h4 className="member__subtitle">VP Design</h4>
-          </div>
-
-          <span onClick={() => toggleTab(12)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 12 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Nigah Tariq</h3>
-              <h4 className="member__modal-subtitle">VP Design</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 2nd Year Computer Science
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-*/}
-
-{/* Member 13 */}
-<div className="member__content">
-          <div>
-            <img src={robin} alt="Robin Lee" className="member__image" />
-            <h3 className="member__title">Robin Lee</h3>
-            <h4 className="member__subtitle">Project Manager: Team 4</h4>
-          </div>
-
-          <span onClick={() => toggleTab(13)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 13 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">Robin Lee</h3>
-              <h4 className="member__modal-subtitle">Project Manager</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Computer Science
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-
-        {/* Member 14 */}
-<div className="member__content">
-          <div>
-            <img src={james} alt="James Lee" className="member__image" />
-            <h3 className="member__title">James Lee</h3>
-            <h4 className="member__subtitle">Project Manager: Team 2</h4>
-          </div>
-
-          <span onClick={() => toggleTab(14)} className="member__button">
-            View More
-            <i className="uil uil-arrow-right member__button-icon"></i>
-          </span>
-
-          <div
-            className={
-              toggleState === 14 ? "member__modal active-modal" : "member__modal"
-            }
-          >
-            <div className="member__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times member__modal-close"
-              ></i>
-
-              <h3 className="member__modal-title">James Lee</h3>
-              <h4 className="member__modal-subtitle">Project Manager</h4>
-
-              <ul className="member__modal-services grid">
-                <li className="member__modal-service">
-                  <i className="uil uil-check-circle member__modal-icon"></i>
-                  <p className="member__modal-info">
-                    Major: 3rd Year Software Engineering
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          ))
+        )}
       </div>
     </section>
   );
