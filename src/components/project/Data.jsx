@@ -8,13 +8,14 @@ import Team3 from "../../assets/projects/team3.png";
 import Team1 from "../../assets/projects/team1.png";
 import Team2 from "../../assets/projects/team2.jpg";
 import Team6 from "../../assets/projects/team6.jpg";
+import Team7 from "../../assets/projects/team7.jpg";
 export const Data = [
   
   {
     id: 1,
     image: Team1,
     title: "Daya Counselling: Custom scheduler",
-    category: "mobile application",
+    category: "app",
   },
   {
     id: 2,
@@ -31,17 +32,25 @@ export const Data = [
   },
   
   {
-    id: 4,
+    id: 5,
     image: Team5,
     title: "United Way Elgin-Middlesex: TD StairClimb Fundraising leaderboard",
     category: "web",
     link: "https://jxohg.github.io/leaderboard-app",
   },
   {
-    id: 5,
+    id: 6,
     image: Team6,
     title: "Jet Aircraft Museym: RFID Interactive devices",
     category: "Gadgets",
+   
+  },
+  {
+    id: 7,
+    image: Team7,
+    title: "Girls Only Hockey: Website Redesign and Database Integration",
+    category: "web",
+    
    
   },
 
