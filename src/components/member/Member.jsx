@@ -116,6 +116,9 @@ const membersData = {
       { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
+      { name: "Brooke Lai", role: "VP Marketing", project:"Operations", img: logo},
+      { name: "Jasmine Vuong", role: "VP Marketing", project:"Operations", img: logo},
+      
 
     ],
 
@@ -182,8 +185,10 @@ const Member = () => {
                 {members.map((member, index) => (
                   <div className="member__content" key={index}>
                     <img src={member.img} alt={member.name} className="member__image" />
-                    <h3 className="member__title">{member.name}</h3>
-                    <h4 className="member__subtitle">{member.role}</h4>
+                    <div className="member__text">
+                      <h3 className="member__title">{member.name}</h3>
+                      <h4 className="member__subtitle">{member.role}</h4>
+                    </div>
                   </div>
                 ))}
               </div>

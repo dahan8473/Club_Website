@@ -117,11 +117,19 @@
   max-width: 180px;
 }
 
-
 /* Member Subtitle (Role) */
 .member__subtitle {
   font-size: 1rem;
   color: #777;
+}
+
+/* Member text container for mobile */
+.member__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
 }
 
 /* Responsive Design */
@@ -135,10 +143,58 @@
   .member-row {
     grid-template-columns: repeat(2, 220px); /* 2 members per row */
   }
+  
+  .year-button,
+  .term-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .member-row {
-    grid-template-columns: repeat(1, 220px); /* 1 member per row */
+    grid-template-columns: 1fr; /* Single column, full width */
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .member__content {
+    height: auto;
+    width: 100%;
+    padding: 0.75rem;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .member__image {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  .member__title {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  
+  .member__subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .year-selector,
+  .term-selector {
+    flex-wrap: wrap;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .project-group {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 }

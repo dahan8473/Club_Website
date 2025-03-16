@@ -18,18 +18,22 @@
 
 .project__img-container {
   width: 100%;
-  height: 200px; /* Fixed height for all images */
-  overflow: hidden; /* Hide overflow */
+  height: auto; /* Changed from fixed height */
+  max-height: 200px; /* Optional: set a maximum height */
+  overflow: hidden;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
-  position: relative; /* For absolute positioning of the image */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project__img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This is the key property */
-  object-position: center; /* Center the image */
+  object-fit: contain; /* Changed from 'cover' to 'contain' */
+  object-position: center;
   transition: transform 0.3s ease;
 }
 
