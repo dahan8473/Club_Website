@@ -41,7 +41,7 @@ export const Data = [
   {
     id: 6,
     image: Team6,
-    title: "Jet Aircraft Museym: RFID Interactive devices",
+    title: "Jet Aircraft Museum: RFID Interactive Museum Exhibits",
     category: "Gadgets",
    
   },
