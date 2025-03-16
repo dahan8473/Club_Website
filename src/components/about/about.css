@@ -2,25 +2,29 @@
     display: grid;
     align-items: center;
     justify-items: center;
+    width: 100%;
 }
 
 .section__title {
     font-size: 2rem;
     margin-top: 5rem;
-    margin-bottom: 0.5rem; 
-    text-align: center; 
+    margin-bottom: 1.5rem; 
+    text-align: center;
+    width: 100%; /* Ensure full width */
 }
 
 .about__data {
     max-width: 600px;
     text-align: center; 
     margin-bottom: 2rem;
-
+    width: 100%; /* Ensure full width up to max-width */
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .about__description {
     font-size: 1rem;
-    padding: 0 1rem; 
+    padding: 0; /* Remove padding here, we're handling it in about__data */
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -34,21 +38,30 @@
 
 /* For medium devices */
 @media screen and (max-width: 992px) {
-    .about__description {
+    .about__data {
         padding: 0 2rem; /* Adjust padding for medium devices */
     }
 }
 
 /* For small devices */
 @media screen and (max-width: 576px) {
-    .about__description {
+    .about__data {
         padding: 0 1rem; /* Adjust padding for small devices */
+    }
+    
+    .section__title {
+        margin-top: 4rem; /* Slightly reduce top margin on small screens */
     }
 }
 
 /* For extra small devices */
 @media screen and (max-width: 350px) {
-    .about__description {
-        padding: 0.5rem; /* Adjust padding for extra small devices */
+    .about__data {
+        padding: 0 0.5rem; /* Adjust padding for extra small devices */
+    }
+    
+    .section__title {
+        margin-top: 3.5rem; /* Further reduce top margin on tiny screens */
+        font-size: 1.75rem; /* Slightly smaller font size */
     }
 }

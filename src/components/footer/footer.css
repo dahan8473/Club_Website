@@ -28,20 +28,60 @@
     display: inline-flex;
 }
 
+.home__social-icon {
+    background-color: #1f7a8c;
+    color: var(--container-color);
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+}
+
 .footer__copy {
     display: block;
     margin-top: 1rem;
     color: var(--title-color);
     text-align: center;
     font-size: var(--smaller-font-size);
+    padding-bottom: 0.5rem; /* Add padding at the bottom */
+}
+
+/* Add padding to the last section to prevent footer overlap */
+section:last-of-type {
+    margin-bottom: 5rem; /* Add bottom margin to last section before footer */
+    padding-bottom: 1rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-    .footer__social-link {
+    .footer__social-link,
+    .home__social-icon {
         padding: 0.25rem;
         border-radius: 0.25rem;
         font-size: 1rem;
+    }
+}
+
+/* For medium and small devices */
+@media screen and (max-width: 768px) {
+    .footer {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .footer__container {
+        padding: 1.5rem 0 4rem; /* Increase bottom padding for mobile view */
+    }
+    
+    section:last-of-type {
+        margin-bottom: 6rem; /* Increase for mobile */
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .footer__container {
+        padding: 1.5rem 0.5rem 4rem; /* Add horizontal padding */
     }
 }
