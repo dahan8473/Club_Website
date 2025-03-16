@@ -1,5 +1,5 @@
 .project__container {
-  width: 100%; /* Adjusted to use percentage for responsive design */
+  width: 100%;
   cursor: pointer;
 }
 
@@ -11,30 +11,49 @@
   margin-bottom: var(--mb-3);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content within the card */
+  align-items: center;
   cursor: pointer;
+  height: 100%; /* Make all cards the same height */
+}
+
+.project__img-container {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 1rem;
+  margin-bottom: var(--mb-1);
+  position: relative; /* For absolute positioning of the image */
 }
 
 .project__img {
-  width: 100%; /* Adjusted to 100% to scale with the container */
-  max-width: 300px; /* Set a max-width to control image size */
-  border-radius: 1rem;
-  margin-bottom: var(--mb-1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This is the key property */
+  object-position: center; /* Center the image */
+  transition: transform 0.3s ease;
+}
+
+.project__img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .project__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-25);
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width */
 }
 
 .project__description {
   font-size: var(--small-font-size);
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width */
 }
 
 /* Navigation buttons */
 .swiper-button-prev, .swiper-button-next {
-  color: var(--title-color); /* Adjust color as per your theme */
+  color: var(--title-color);
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -42,20 +61,20 @@
   height: auto;
   padding: 0;
   z-index: 10;
-  background-image: none; /* Remove default arrows */
+  background-image: none;
 }
 
 .swiper-button-prev {
-  left: 10px; /* Distance from the left edge */
+  left: 10px;
 }
 
 .swiper-button-next {
-  right: 10px; /* Distance from the right edge */
+  right: 10px;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
-  font-size: 20px; /* Adjust size accordingly */
-  content: '❮'; /* Use appropriate characters or icons */
+  font-size: 20px;
+  content: '❮';
 }
 
 .swiper-button-next::after {
@@ -63,16 +82,52 @@
 }
 
 .swiper-button-prev:hover, .swiper-button-next:hover {
-  color: var(--hover-color); /* Color on hover */
+  color: var(--hover-color);
+}
+
+/* Custom pagination */
+.project-pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.project-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.project-pagination .swiper-pagination-bullet-active {
+  background-color: #333;
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 /* Breakpoints */
 @media screen and (max-width: 992px) {
   .project__container {
-      width: 100%; /* Adjust width for smaller screens */
+    width: 100%;
   }
 
   .project__card {
-      padding: 1rem; /* Slightly reduce padding on smaller screens */
+    padding: 1rem;
+  }
+  
+  .project__img-container {
+    height: 180px; /* Slightly smaller on medium screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project__img-container {
+    height: 160px; /* Even smaller on mobile */
   }
 }

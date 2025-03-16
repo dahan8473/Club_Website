@@ -14,6 +14,8 @@ import anthony from "../../assets/members/anthony lam.jpg";
 import dev from "../../assets/members/dev joshi.jpg";
 import sachi from "../../assets/members/sachi sisodia.jpg";
 import logo from "../../assets/members/logo.png";
+import thomas from  "../../assets/members/thomasllamzon.jpg"
+import adeline from "../../assets/members/adelineluesang.jpg"
 
 const membersData = {
   "2024-2025": {
@@ -82,8 +84,8 @@ const membersData = {
       { name: "Sarah Solaiman", role: "Developer", project: "Empower Health", img: logo },
 
       { name: "Justin Oh", role: "Project Manager", project: "Passion for Parkinson's", img: justin },
-      { name: "Thomas Llamzon", role: "Project Manager", project: "Passion for Parkinson's", img: logo },
-      { name: "Adeline Lue Sang", role: "Developer", project: "Passion for Parkinson's", img: logo },
+      { name: "Thomas Llamzon", role: "Project Manager", project: "Passion for Parkinson's", img: thomas},
+      { name: "Adeline Lue Sang", role: "Developer", project: "Passion for Parkinson's", img: adeline },
       { name: "Andres Pedreros Castro", role: "Developer", project: "Passion for Parkinson's", img: logo },
       { name: "Ethan Ung", role: "Developer", project: "Passion for Parkinson's", img: logo },
       { name: "Harry Yang", role: "Developer", project: "Passion for Parkinson's", img: logo },

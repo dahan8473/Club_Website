@@ -12,20 +12,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem; /* Add padding to bring items closer to the edges */
+    padding: 0 1rem;
 }
 
 .nav__logo-wrapper {
     display: flex;
     align-items: center;
+    /* Ensure minimum width to prevent excessive shrinking */
+    min-width: 150px;
+    /* Prevent clipping/overflow of the logo */
+    overflow: visible;
 }
 
 .nav__logo-gif {
-    width: 50px; /* Adjust the width as needed */
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px; /* Reduced space between the GIF and the text */
+    /* Set fixed dimensions to prevent unpredictable resizing */
+    width: 50px;
+    height: 50px;
+    /* Ensure image maintains its aspect ratio */
+    object-fit: contain;
+    display: block;
+    margin-right: 8px;
+    /* Prevent any clipping of the image */
+    overflow: visible;
 }
 
 .nav__logo,
@@ -51,11 +59,10 @@
     color: #FFFFFF;
     font-weight: var(--font-medium);
     transition: .3s;
-    padding: 0.5rem; /* Add padding to increase clickable area */
-    border-radius: 0.25rem; /* Add border-radius for smooth corners */
+    padding: 0.5rem;
+    border-radius: 0.25rem;
 }
 
-/* Add hover effect */
 .nav__link:hover {
     background-color: #03394d;
     color: #FFFFFF;
@@ -67,13 +74,11 @@
     display: none;
 }
 
-/* Active link */
 .active-link,
 .nav__link:hover {
     color: #FFFFFF;
 }
 
-/* Change background header */
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
@@ -88,7 +93,35 @@
 
     .nav {
         height: var(--header-height);
-        padding: 0 1rem; /* Adjust padding for smaller screens as well */
+        padding: 0 1rem;
+    }
+    
+    /* Ensure logo remains visible and properly sized on mobile */
+    .nav__logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        min-width: 120px;
+        /* Make sure there's no clipping */
+        overflow: visible;
+        /* Keep it at the left side for consistency */
+        margin-right: auto;
+    }
+    
+    .nav__logo-gif {
+        /* Keep dimensions consistent */
+        width: 45px;
+        height: 45px;
+        /* Ensure image is fully visible */
+        object-fit: contain;
+        /* Add a bit of margin for spacing */
+        margin-right: 6px;
+    }
+    
+    .nav__logo {
+        /* Make sure the text stays visible */
+        font-size: 1.2rem;
+        white-space: nowrap;
     }
 
     .nav__menu {
@@ -152,5 +185,26 @@
 
     .nav__list {
         column-gap: 0;
+    }
+    
+    /* Further adjustments for very small screens */
+    .nav__logo-wrapper {
+        min-width: 100px;
+        /* Keep focused on showing the logo properly */
+        justify-content: flex-start;
+    }
+    
+    .nav__logo-gif {
+        /* Maintain visibility even on tiny screens */
+        width: 40px;
+        height: 40px;
+        /* Ensure proper display */
+        object-fit: contain;
+        margin-right: 4px;
+    }
+    
+    .nav__logo {
+        /* Slightly reduce font size but keep it readable */
+        font-size: 1.1rem;
     }
 }

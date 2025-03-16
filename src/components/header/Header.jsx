@@ -26,7 +26,15 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <div className="nav__logo-wrapper">
-          <img src={logoGif} alt="Logo" className="nav__logo-gif" />
+          {/* Add alt text and ensure the image loads properly */}
+          <img 
+            src={logoGif} 
+            alt="TSI Logo" 
+            className="nav__logo-gif" 
+            // Force image to load completely before rendering
+            onLoad={(e) => e.target.style.visibility = 'visible'} 
+            style={{ visibility: 'hidden' }} // Hide until loaded
+          />
           <a href="index.html" className="nav__logo">
             TSI
           </a>

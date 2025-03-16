@@ -4,35 +4,49 @@ import Project3 from "../../assets/projects/project3.jpg";
 import Project4 from "../../assets/projects/project4.jpg";
 import Project5 from "../../assets/projects/project5.jpg";
 import Team5 from "../../assets/projects/team5.png";
-
+import Team3 from "../../assets/projects/team3.png";
+import Team1 from "../../assets/projects/team1.png";
+import Team2 from "../../assets/projects/team2.jpg";
+import Team6 from "../../assets/projects/team6.jpg";
 export const Data = [
-  {/*
+  
   {
     id: 1,
-    image: Project1,
-    title: "Web Design",
-    category: "web",
+    image: Team1,
+    title: "Daya Counselling: Custom scheduler",
+    category: "mobile application",
   },
   {
     id: 2,
-    image: Project2,
-    title: "Mobile Apps",
+    image: Team2,
+    title: "Youtth Opportunities Unlimited: Workflow Management software",
     category: "app",
   },
   {
     id: 3,
-    image: Project3,
-    title: "Brand Design",
-    category: "design",
+    image: Team3,
+    title: "Boys and Girls Club London: Website Google Analytics",
+    category: "web",
+    link: "https://www.bgclondon.ca/",
   },
-  */},
+  
   {
-    id: 5,
+    id: 4,
     image: Team5,
-    title: "Team 5 United Way Elgin-Middlesex",
+    title: "United Way Elgin-Middlesex: TD StairClimb Fundraising leaderboard",
     category: "web",
     link: "https://jxohg.github.io/leaderboard-app",
   },
+  {
+    id: 5,
+    image: Team6,
+    title: "Jet Aircraft Museym: RFID Interactive devices",
+    category: "Gadgets",
+   
+  },
+
+
+
 
 ];
 
