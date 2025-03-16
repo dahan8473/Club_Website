@@ -16,7 +16,7 @@ import sachi from "../../assets/members/sachi sisodia.jpg";
 import logo from "../../assets/members/logo.png";
 import thomas from  "../../assets/members/thomasllamzon.jpg"
 import adeline from "../../assets/members/adelineluesang.jpg"
-
+import parneet from "../../assets/members/parneet_baidwan.png"
 const membersData = {
   "2024-2025": {
     "Fall Term": [
@@ -92,7 +92,7 @@ const membersData = {
       { name: "Kenneth Li", role: "Developer", project: "Passion for Parkinson's", img: logo },
 
       { name: "David Liu", role: "Project Manager", project: "Fund Homecare", img: logo },
-      { name: "Parneet Baidwan", role: "Project Manager", project: "Fund Homecare", img: logo },
+      { name: "Parneet Baidwan", role: "Project Manager", project: "Fund Homecare", img: parneet },
       { name: "Johnathan Lam", role: "Developer", project: "Fund Homecare", img: logo },
       { name: "Samuel Joseph Humphrey", role: "Developer", project: "Fund Homecare", img: logo },
       { name: "Shayo Olaiya", role: "Developer", project: "Fund Homecare", img: logo },
@@ -118,7 +118,7 @@ const membersData = {
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
       { name: "Brooke Lai", role: "VP Marketing", project:"Operations", img: logo},
       { name: "Jasmine Vuong", role: "VP Marketing", project:"Operations", img: logo},
-      
+
 
     ],
 
