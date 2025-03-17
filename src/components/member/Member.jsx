@@ -19,11 +19,12 @@ import thomas from  "../../assets/members/thomasllamzon.jpg";
 import adeline from "../../assets/members/adelineluesang.jpg"
 import david2 from "../../assets/members/David_Liu2.jpg";
 import parneet from "../../assets/members/parneet_baidwan.png";
-import hadi from "../../assets/members/Hadi_Youssef.jpg";
+import hadi from "../../assets/members/Hadi_Youssef.png";
 import johnathan from "../../assets/members/johnathan_lam.jpeg";
 import vinesh from "../../assets/members/Vinesh_Ranganathan.jpg";
 import zalak from "../../assets/members/Zalak_Hansoti.jpg";
 import danielTan from "../../assets/members/daniel_tan.png";
+import lisha from "../../assets/members/Lisha_Makwana.jpg";
 
 
 const membersData = {
@@ -74,6 +75,7 @@ const membersData = {
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
       { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
+      { name: "Lisha Makwana", role: "Director of Marketing", project:"Operations", img: lisha},
     ],
 
     "Winter Term": [
@@ -131,7 +133,7 @@ const membersData = {
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
       { name: "Brooke Lai", role: "VP Marketing", project:"Operations", img: logo},
       { name: "Jasmine Vuong", role: "VP Marketing", project:"Operations", img: logo},
-
+      { name: "Lisha Makwana", role: "Director of Marketing", project:"Operations", img: lisha},
 
     ],
 

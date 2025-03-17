@@ -19,8 +19,9 @@ const Project = () => {
 
       <Swiper
         className="project__container"
-        loop={false}
+        loop={true}
         grabCursor={true}
+        loopedSlides={Data.length} // Ensures a proper loop in both directions
         slidesPerView={1}
         spaceBetween={24}
         speed={600}

@@ -1,61 +1,52 @@
-import Project1 from "../../assets/projects/project1.jpg";
-import Project2 from "../../assets/projects/project2.jpg";
-import Project3 from "../../assets/projects/project3.jpg";
-import Project4 from "../../assets/projects/project4.jpg";
-import Project5 from "../../assets/projects/project5.jpg";
-import Team5 from "../../assets/projects/team5.png";
-import Team3 from "../../assets/projects/team3.png";
-import Team1 from "../../assets/projects/team1.png";
-import Team2 from "../../assets/projects/team2.jpg";
-import Team6 from "../../assets/projects/team6.jpg";
-import Team7 from "../../assets/projects/team7.jpg";
+import GOHockey from "../../assets/projects/GOHockey.jpg";
+import JAM from "../../assets/projects/JAM.jpg";
+import unitedWay from "../../assets/projects/unitedWay.png";
+//import TREA from "../../assets/projects/TREA.jpg";
+import BGC from "../../assets/projects/BGC.png";
+import YOU from "../../assets/projects/YOU.jpg";
+
 export const Data = [
   
   {
     id: 1,
-    image: Team1,
-    title: "Daya Counselling: Custom scheduler",
-    category: "app",
+    image: GOHockey,
+    title: "Website Redesign and Database Integration",
+    link: "https://gohockey.org/",
   },
+
   {
     id: 2,
-    image: Team2,
-    title: "Youtth Opportunities Unlimited: Workflow Management software",
-    category: "app",
-  },
-  {
-    id: 3,
-    image: Team3,
-    title: "Boys and Girls Club London: Website Google Analytics",
-    category: "web",
-    link: "https://www.bgclondon.ca/",
+    image: JAM,
+    title: "RFID Interactive Museum Exhibits",
   },
   
   {
-    id: 5,
-    image: Team5,
-    title: "United Way Elgin-Middlesex: TD StairClimb Fundraising leaderboard",
-    category: "web",
+    id: 3,
+    image: unitedWay,
+    title: "TD StairClimb Fundraising leaderboard",
     link: "https://jxohg.github.io/leaderboard-app",
   },
+
+  /*
+  {
+    id: 4,
+    image: TREA,
+    title: "TREA",
+  },
+*/
+
+  {
+    id: 5,
+    image: BGC,
+    title: "Website Google Analytics",
+    link: "https://www.bgclondon.ca/",
+  },
+
   {
     id: 6,
-    image: Team6,
-    title: "Jet Aircraft Museum: RFID Interactive Museum Exhibits",
-    category: "Gadgets",
-   
+    image: YOU,
+    title: "YOU",
   },
-  {
-    id: 7,
-    image: Team7,
-    title: "Girls Only Hockey: Website Redesign and Database Integration",
-    category: "web",
-    
-   
-  },
-
-
-
 
 ];
 
