@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./member.css";
+
 import david from "../../assets/members/david liu.jpg";
 import sarah from "../../assets/members/sarah chiang.jpg";
 import trinity from "../../assets/members/trinity ung.jpg";
 import ethan from "../../assets/members/ethan liu.jpg";
-import jack from "../../assets/members/Jack Hogan.jpeg";
+import jack from "../../assets/members/Jack_Hogan.jpg";
 import justin from "../../assets/members/justin oh.jpg";
 import luca from "../../assets/members/luca duarte.jpeg";
 import robin from "../../assets/members/robin lee.jpg";
@@ -14,9 +15,15 @@ import anthony from "../../assets/members/anthony lam.jpg";
 import dev from "../../assets/members/dev joshi.jpg";
 import sachi from "../../assets/members/sachi sisodia.jpg";
 import logo from "../../assets/members/logo.png";
-import thomas from  "../../assets/members/thomasllamzon.jpg"
+import thomas from  "../../assets/members/thomasllamzon.jpg";
 import adeline from "../../assets/members/adelineluesang.jpg"
-import parneet from "../../assets/members/parneet_baidwan.png"
+import david2 from "../../assets/members/David_Liu2.jpg";
+import parneet from "../../assets/members/parneet_baidwan.png";
+import hadi from "../../assets/members/Hadi_Youssef.jpg";
+import johnathan from "../../assets/members/johnathan_lam.jpeg";
+import vinesh from "../../assets/members/Vinesh_Ranganathan.jpg";
+import zalak from "../../assets/members/Zalak_Hansoti.jpg";
+
 const membersData = {
   "2024-2025": {
     "Fall Term": [
@@ -73,7 +80,7 @@ const membersData = {
       { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Issar Manknojyia", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Mariappan Vineeth", role: "Developer", project: "FINANCE4HER", img: logo },
-      { name: "Zalak Hansoti", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Zalak Hansoti", role: "Developer", project: "FINANCE4HER", img: zalak },
 
       { name: "Anthony Lam", role: "Project Manager", project: "Empower Health", img: anthony },
       { name: "Shivali Sharma", role: "Project Manager", project: "Empower Health", img: logo },
@@ -91,9 +98,9 @@ const membersData = {
       { name: "Harry Yang", role: "Developer", project: "Passion for Parkinson's", img: logo },
       { name: "Kenneth Li", role: "Developer", project: "Passion for Parkinson's", img: logo },
 
-      { name: "David Liu", role: "Project Manager", project: "Fund Homecare", img: logo },
+      { name: "David Liu", role: "Project Manager", project: "Fund Homecare", img: david2 },
       { name: "Parneet Baidwan", role: "Project Manager", project: "Fund Homecare", img: parneet },
-      { name: "Johnathan Lam", role: "Developer", project: "Fund Homecare", img: logo },
+      { name: "Johnathan Lam", role: "Developer", project: "Fund Homecare", img: johnathan },
       { name: "Samuel Joseph Humphrey", role: "Developer", project: "Fund Homecare", img: logo },
       { name: "Shayo Olaiya", role: "Developer", project: "Fund Homecare", img: logo },
       { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: logo },
