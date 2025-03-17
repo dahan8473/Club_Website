@@ -23,6 +23,8 @@ import hadi from "../../assets/members/Hadi_Youssef.jpg";
 import johnathan from "../../assets/members/johnathan_lam.jpeg";
 import vinesh from "../../assets/members/Vinesh_Ranganathan.jpg";
 import zalak from "../../assets/members/Zalak_Hansoti.jpg";
+import danielTan from "../../assets/members/daniel_tan.png";
+
 
 const membersData = {
   "2024-2025": {
