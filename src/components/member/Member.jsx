@@ -65,12 +65,14 @@ const membersData = {
       { name: "James Lee", role: "Project Manager", project: "YOU", img: james },
       { name: "Christopher Lam", role: "Project Manager", project: "YOU", img: christopher },
       { name: "Ethan Bhalla", role: "Developer", project: "YOU", img: logo },
-      { name: "Hadi Youssef", role: "Developer", project: "YOU", img: logo },
+      { name: "Hadi Youssef", role: "Developer", project: "YOU", img: hadi },
       { name: "Het Patel", role: "Developer", project: "YOU", img: logo },
       { name: "Jack Branston", role: "Developer", project: "YOU", img: logo },
 
       { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
+      { name: "Daniel Tan", role: "Director of Outreach", project: "Operations", img: danielTan },
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
+      { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
     ],
 
@@ -123,7 +125,9 @@ const membersData = {
       { name: "Vidhi Kothawala", role: "Developer", project: "Fund Homecare Scraper", img: logo },
 
       { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
+      { name: "Daniel Tan", role: "Director of Outreach", project: "Operations", img: danielTan },
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
+      { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
       { name: "Brooke Lai", role: "VP Marketing", project:"Operations", img: logo},
       { name: "Jasmine Vuong", role: "VP Marketing", project:"Operations", img: logo},
