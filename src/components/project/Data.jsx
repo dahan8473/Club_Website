@@ -9,6 +9,7 @@ import Team1 from "../../assets/projects/team1.png";
 import Team2 from "../../assets/projects/team2.jpg";
 import Team6 from "../../assets/projects/team6.jpg";
 import Team7 from "../../assets/projects/team7.jpg";
+import Team4 from "../../assets/projects/team4.jpg"
 export const Data = [
   
   {
@@ -20,7 +21,7 @@ export const Data = [
   {
     id: 2,
     image: Team2,
-    title: "Youtth Opportunities Unlimited: Workflow Management software",
+    title: "Youth Opportunities Unlimited: Workflow Management software",
     category: "app",
   },
   {
@@ -30,7 +31,12 @@ export const Data = [
     category: "web",
     link: "https://www.bgclondon.ca/",
   },
-  
+  {
+    id: 4,
+    image: Team4,
+    title: "Thames Region Ecological Association: Webpage redesign",
+    category: "web",
+  },
   {
     id: 5,
     image: Team5,
