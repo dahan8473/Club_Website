@@ -13,7 +13,6 @@ body, html {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  padding: 2rem 1rem;
   width: 100%; /* Ensure full width */
   box-sizing: border-box; /* Include padding in width calculation */
 }
@@ -32,7 +31,6 @@ body, html {
   max-width: 650px;
   height: auto;
   display: block;
-  margin: 0 auto 2rem auto;
 }
 
 .home__title {

@@ -26,6 +26,15 @@ import zalak from "../../assets/members/Zalak_Hansoti.jpg";
 import danielTan from "../../assets/members/daniel_tan.png";
 import lisha from "../../assets/members/Lisha_Makwana.jpg";
 
+import seabar from "../../assets/members/Seabar_Omarzadeh.jpg";
+import ivory from "../../assets/members/Ivory_Huo.jpeg";
+import mariappan from "../../assets/members/Mariappan_Vineeth.jpg";
+import jade from "../../assets/members/Jade_liu.jpg";
+import stephanie from "../../assets/members/Stephanie_Li.jpeg";
+import lucian from "../../assets/members/Lucian__Lavric.png";
+import emily from "../../assets/members/Emily_Berlinghoff.jpg";
+
+
 
 const membersData = {
   "2024-2025": {
@@ -35,7 +44,7 @@ const membersData = {
       { name: "Trinity Ung", role: "Project Manager", project: "GO Hockey", img: trinity },
       { name: "Clayton McCormack", role: "Developer", project: "GO Hockey", img: logo },
       { name: "Daniel Antal", role: "Developer", project: "GO Hockey", img: logo },
-      { name: "Ivory Huo", role: "Developer", project: "GO Hockey", img: logo },
+      { name: "Ivory Huo", role: "Developer", project: "GO Hockey", img: ivory },
       { name: "Noah Kostesku", role: "Developer", project: "GO Hockey", img: logo },
 
       { name: "Ethan Liu", role: "Project Manager", project: "JAM", img: ethan },
@@ -43,7 +52,7 @@ const membersData = {
       { name: "Alan Sanjit", role: "Developer", project: "JAM", img: logo },
       { name: "Michelle Li", role: "Developer", project: "JAM", img: logo },
       { name: "Omar Hossain", role: "Developer", project: "JAM", img: logo },
-      { name: "Seabar Omarzadeh", role: "Developer", project: "JAM", img: logo },
+      { name: "Seabar Omarzadeh", role: "Developer", project: "JAM", img: seabar },
 
       { name: "Justin Oh", role: "Project Manager", project: "United Way", img: justin },
       { name: "Luca Duarte", role: "Project Manager", project: "United Way", img: luca },
@@ -75,6 +84,7 @@ const membersData = {
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
       { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
+      { name: "Emily Berlinghoff", role: "Director of Marketing", project:"Operations", img: emily},
       { name: "Lisha Makwana", role: "Director of Marketing", project:"Operations", img: lisha},
     ],
 
@@ -85,14 +95,14 @@ const membersData = {
       { name: "Abdullah Imran", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Issar Manknojyia", role: "Developer", project: "FINANCE4HER", img: logo },
-      { name: "Mariappan Vineeth", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Mariappan Vineeth", role: "Developer", project: "FINANCE4HER", img: mariappan },
       { name: "Zalak Hansoti", role: "Developer", project: "FINANCE4HER", img: zalak },
 
       { name: "Anthony Lam", role: "Project Manager", project: "Empower Health", img: anthony },
       { name: "Shivali Sharma", role: "Project Manager", project: "Empower Health", img: logo },
       { name: "Aditi Bhardwaj", role: "Developer", project: "Empower Health", img: logo },
       { name: "Dylan Wettlaufer", role: "Developer", project: "Empower Health", img: logo },
-      { name: "Jade Liu", role: "Developer", project: "Empower Health", img: logo },
+      { name: "Jade Liu", role: "Developer", project: "Empower Health", img: jade },
       { name: "Pranav Chopra", role: "Developer", project: "Empower Health", img: logo },
       { name: "Sarah Solaiman", role: "Developer", project: "Empower Health", img: logo },
 
@@ -112,26 +122,27 @@ const membersData = {
       { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: logo },
 
       { name: "Noah Kosteku", role: "Project Manager", project: "Fund Homecare Website Redesign", img: logo },
-      { name: "Stephanie Li", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Stephanie Li", role: "Project Manager", project: "Fund Homecare Website Redesign", img: stephanie },
       { name: "Carmen Choi", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Joanna Cui", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Justin Chow", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Prabnoor Multani", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
 
       { name: "Luca Duarte", role: "Project Manager", project: "Fund Homecare Scraper", img: luca },
-      { name: "Robin Lee", role: "Developer", project: "Fund Homecare Scraper", img: robin },
+      { name: "Robin Lee", role: "Project Manager", project: "Fund Homecare Scraper", img: robin },
       { name: "Adit Bhimani", role: "Developer", project: "Fund Homecare Scraper", img: logo },
       { name: "Cameron Ollerhead", role: "Developer", project: "Fund Homecare Scraper", img: logo },
       { name: "Justin Rowbotham", role: "Developer", project: "Fund Homecare Scraper", img: logo },
-      { name: "Lucian Lavric ", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+      { name: "Lucian Lavric ", role: "Developer", project: "Fund Homecare Scraper", img: lucian },
       { name: "Vidhi Kothawala", role: "Developer", project: "Fund Homecare Scraper", img: logo },
 
-      { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
+      { name: "David Liu", role: "President, VP outreach", project: "Operations", img: david },
       { name: "Daniel Tan", role: "Director of Outreach", project: "Operations", img: danielTan },
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
       { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
       { name: "Brooke Lai", role: "VP Marketing", project:"Operations", img: logo},
+      { name: "Emily Berlinghoff", role: "Director of Marketing", project:"Operations", img: emily},
       { name: "Jasmine Vuong", role: "VP Marketing", project:"Operations", img: logo},
       { name: "Lisha Makwana", role: "Director of Marketing", project:"Operations", img: lisha},
 
