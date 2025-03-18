@@ -18,6 +18,7 @@ export const Data = [
     id: 2,
     image: JAM,
     title: "RFID Interactive Museum Exhibits",
+
   },
   
   {
@@ -32,7 +33,7 @@ export const Data = [
     image: TREA,
     title: "TREA",
   },
-
+  
   {
     id: 5,
     image: BGC,
