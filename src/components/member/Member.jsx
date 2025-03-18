@@ -79,13 +79,13 @@ const membersData = {
       { name: "Het Patel", role: "Developer", project: "YOU", img: logo },
       { name: "Jack Branston", role: "Developer", project: "YOU", img: logo },
 
-      { name: "David Liu", role: "Founder & President", project: "Operations", img: david },
-      { name: "Daniel Tan", role: "Director of Outreach", project: "Operations", img: danielTan },
+      { name: "David Liu", role: "President & VP Outreach", project: "Operations", img: david },
+      { name: "Daniel Tan", role: "Outreach Director", project: "Operations", img: danielTan },
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
-      { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
+      { name: "Vinesh Ranganathan", role: "Finance Director", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
-      { name: "Emily Berlinghoff", role: "Director of Marketing", project:"Operations", img: emily},
-      { name: "Lisha Makwana", role: "Director of Marketing", project:"Operations", img: lisha},
+      { name: "Emily Berlinghoff", role: "Marketing Director", project:"Operations", img: emily},
+      { name: "Lisha Makwana", role: "Marketing Director", project:"Operations", img: lisha},
     ],
 
     "Winter Term": [
@@ -136,15 +136,15 @@ const membersData = {
       { name: "Lucian Lavric ", role: "Developer", project: "Fund Homecare Scraper", img: lucian },
       { name: "Vidhi Kothawala", role: "Developer", project: "Fund Homecare Scraper", img: logo },
 
-      { name: "David Liu", role: "President, VP outreach", project: "Operations", img: david },
-      { name: "Daniel Tan", role: "Director of Outreach", project: "Operations", img: danielTan },
+      { name: "David Liu", role: "President, VP Outreach", project: "Operations", img: david },
+      { name: "Daniel Tan", role: "Outreach Director", project: "Operations", img: danielTan },
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
-      { name: "Vinesh Ranganathan", role: "Director of Finance", project: "Operations", img: vinesh },
+      { name: "Vinesh Ranganathan", role: "Finance Director", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
       { name: "Brooke Lai", role: "VP Marketing", project:"Operations", img: logo},
-      { name: "Emily Berlinghoff", role: "Director of Marketing", project:"Operations", img: emily},
+      { name: "Emily Berlinghoff", role: "Marketing Director", project:"Operations", img: emily},
       { name: "Jasmine Vuong", role: "VP Marketing", project:"Operations", img: logo},
-      { name: "Lisha Makwana", role: "Director of Marketing", project:"Operations", img: lisha},
+      { name: "Lisha Makwana", role: "Marketing Director", project:"Operations", img: lisha},
 
     ],
 
