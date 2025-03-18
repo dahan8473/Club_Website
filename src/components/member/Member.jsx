@@ -122,7 +122,7 @@ const membersData = {
       { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: logo },
 
       { name: "Noah Kosteku", role: "Project Manager", project: "Fund Homecare Website Redesign", img: logo },
-      { name: "Stephanie Li", role: "Project Manager", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Stephanie Li", role: "Project Manager", project: "Fund Homecare Website Redesign", img: stephanie },
       { name: "Carmen Choi", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Joanna Cui", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Justin Chow", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
