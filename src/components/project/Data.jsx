@@ -1,7 +1,7 @@
 import GOHockey from "../../assets/projects/GOHockey.jpg";
 import JAM from "../../assets/projects/JAM.jpg";
 import unitedWay from "../../assets/projects/unitedWay.png";
-//import TREA from "../../assets/projects/TREA.jpg";
+import TREA from "../../assets/projects/TREA.jpg";
 import BGC from "../../assets/projects/BGC.png";
 import YOU from "../../assets/projects/YOU.jpg";
 
@@ -27,13 +27,11 @@ export const Data = [
     link: "https://jxohg.github.io/leaderboard-app",
   },
 
-  /*
   {
     id: 4,
     image: TREA,
     title: "TREA",
   },
-*/
 
   {
     id: 5,
@@ -41,7 +39,7 @@ export const Data = [
     title: "Website Google Analytics",
     link: "https://www.bgclondon.ca/",
   },
-
+  
   {
     id: 6,
     image: YOU,
