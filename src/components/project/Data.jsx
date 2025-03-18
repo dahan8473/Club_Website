@@ -31,20 +31,20 @@ export const Data = [
   {
     id: 4,
     image: TREA,
-    title: "TREA",
+    title: "Thames Region Ecological Association: Website redesign",
   },
   
   {
     id: 5,
     image: BGC,
-    title: "Website Google Analytics",
+    title: "Boys and Girls Club: Website Google Analytics",
     link: "https://www.bgclondon.ca/",
   },
   
   {
     id: 6,
     image: YOU,
-    title: "YOU",
+    title: "Youth Opportunities Unlimited: Workflow Management software",
   },
 
 ];

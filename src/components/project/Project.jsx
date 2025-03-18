@@ -21,13 +21,13 @@ const Project = () => {
         className="project__container"
         loop={true}
         grabCursor={true}
-        loopedSlides={Data.length} // Ensures a proper loop in both directions
         slidesPerView={1}
         spaceBetween={24}
         speed={600}
         pagination={{
           clickable: true,
-          el: '.project-pagination',
+          // Don't use the custom pagination element for now
+          // el: '.project-pagination',
           type: 'bullets',
         }}
         navigation={true}
@@ -57,16 +57,16 @@ const Project = () => {
               </div>
             
               <h3 className="project__name">{title}</h3>
-              <p className="project__description">{description}</p>
+              {description && <p className="project__description">{description}</p>}
             </SwiperSlide>
           );
         })}
       </Swiper>
       
-      {/* Custom pagination */}
-      <div className="project-pagination-container">
+      {/* Removing the custom pagination container for now */}
+      {/* <div className="project-pagination-container">
         <div className="project-pagination"></div>
-      </div>
+      </div> */}
     </section>
   );
 };
