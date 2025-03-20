@@ -3,7 +3,7 @@ import "./member.css";
 
 import david from "../../assets/members/david liu.jpg";
 import sarah from "../../assets/members/sarah chiang.jpg";
-import trinity from "../../assets/members/trinity ung.jpg";
+import trinity from "../../assets/members/trinity ung.png";
 import ethan from "../../assets/members/ethan liu.jpg";
 import jack from "../../assets/members/Jack_Hogan.jpg";
 import justin from "../../assets/members/justin oh.jpg";
@@ -25,7 +25,6 @@ import vinesh from "../../assets/members/Vinesh_Ranganathan.jpg";
 import zalak from "../../assets/members/Zalak_Hansoti.jpg";
 import danielTan from "../../assets/members/daniel_tan.png";
 import lisha from "../../assets/members/Lisha_Makwana.jpg";
-
 import seabar from "../../assets/members/Seabar_Omarzadeh.jpg";
 import ivory from "../../assets/members/Ivory_Huo.jpeg";
 import mariappan from "../../assets/members/Mariappan_Vineeth.jpg";
@@ -33,7 +32,11 @@ import jade from "../../assets/members/Jade_liu.jpg";
 import stephanie from "../../assets/members/Stephanie_Li.jpeg";
 import lucian from "../../assets/members/Lucian__Lavric.png";
 import emily from "../../assets/members/Emily_Berlinghoff.jpg";
-
+import clayton from "../../assets/members/Clayton_McCormack.png";
+import andres from "../../assets/members/andres_pedreros.jpg";
+import zekai from "../../assets/members/Zekai_Zhao.jpg";
+import adit from "../../assets/members/Adit_Bhimani.png";
+import shivali from "../../assets/members/Shivali_Sharma.jpeg";
 
 
 const membersData = {
@@ -42,7 +45,7 @@ const membersData = {
       
       { name: "Sarah Chiang", role: "Project Manager", project: "GO Hockey", img: sarah },
       { name: "Trinity Ung", role: "Project Manager", project: "GO Hockey", img: trinity },
-      { name: "Clayton McCormack", role: "Developer", project: "GO Hockey", img: logo },
+      { name: "Clayton McCormack", role: "Developer", project: "GO Hockey", img: clayton },
       { name: "Daniel Antal", role: "Developer", project: "GO Hockey", img: logo },
       { name: "Ivory Huo", role: "Developer", project: "GO Hockey", img: ivory },
       { name: "Noah Kostesku", role: "Developer", project: "GO Hockey", img: logo },
@@ -74,10 +77,12 @@ const membersData = {
  
       { name: "James Lee", role: "Project Manager", project: "YOU", img: james },
       { name: "Christopher Lam", role: "Project Manager", project: "YOU", img: christopher },
+      { name: "Cole Branston", role: "Developer", project: "YOU", img: logo },
       { name: "Ethan Bhalla", role: "Developer", project: "YOU", img: logo },
       { name: "Hadi Youssef", role: "Developer", project: "YOU", img: hadi },
       { name: "Het Patel", role: "Developer", project: "YOU", img: logo },
       { name: "Jack Branston", role: "Developer", project: "YOU", img: logo },
+
 
       { name: "David Liu", role: "President & VP Outreach", project: "Operations", img: david },
       { name: "Daniel Tan", role: "Outreach Director", project: "Operations", img: danielTan },
@@ -93,13 +98,13 @@ const membersData = {
       { name: "Sarah Chiang", role: "Project Manager", project: "FINANCE4HER", img: sarah },
       { name: "Trinity Ung", role: "Project Manager", project: "FINANCE4HER", img: trinity },
       { name: "Abdullah Imran", role: "Developer", project: "FINANCE4HER", img: logo },
-      { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: clayton },
       { name: "Issar Manknojyia", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Mariappan Vineeth", role: "Developer", project: "FINANCE4HER", img: mariappan },
       { name: "Zalak Hansoti", role: "Developer", project: "FINANCE4HER", img: zalak },
 
       { name: "Anthony Lam", role: "Project Manager", project: "Empower Health", img: anthony },
-      { name: "Shivali Sharma", role: "Project Manager", project: "Empower Health", img: logo },
+      { name: "Shivali Sharma", role: "Project Manager", project: "Empower Health", img: shivali },
       { name: "Aditi Bhardwaj", role: "Developer", project: "Empower Health", img: logo },
       { name: "Dylan Wettlaufer", role: "Developer", project: "Empower Health", img: logo },
       { name: "Jade Liu", role: "Developer", project: "Empower Health", img: jade },
@@ -109,7 +114,7 @@ const membersData = {
       { name: "Justin Oh", role: "Project Manager", project: "Passion for Parkinson's", img: justin },
       { name: "Thomas Llamzon", role: "Project Manager", project: "Passion for Parkinson's", img: thomas},
       { name: "Adeline Lue Sang", role: "Developer", project: "Passion for Parkinson's", img: adeline },
-      { name: "Andres Pedreros Castro", role: "Developer", project: "Passion for Parkinson's", img: logo },
+      { name: "Andres Castro", role: "Developer", project: "Passion for Parkinson's", img: andres },
       { name: "Ethan Ung", role: "Developer", project: "Passion for Parkinson's", img: logo },
       { name: "Harry Yang", role: "Developer", project: "Passion for Parkinson's", img: logo },
       { name: "Kenneth Li", role: "Developer", project: "Passion for Parkinson's", img: logo },
@@ -119,7 +124,7 @@ const membersData = {
       { name: "Johnathan Lam", role: "Developer", project: "Fund Homecare", img: johnathan },
       { name: "Samuel Joseph Humphrey", role: "Developer", project: "Fund Homecare", img: logo },
       { name: "Shayo Olaiya", role: "Developer", project: "Fund Homecare", img: logo },
-      { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: logo },
+      { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: zekai },
 
       { name: "Noah Kosteku", role: "Project Manager", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Stephanie Li", role: "Project Manager", project: "Fund Homecare Website Redesign", img: stephanie },
@@ -130,7 +135,7 @@ const membersData = {
 
       { name: "Luca Duarte", role: "Project Manager", project: "Fund Homecare Scraper", img: luca },
       { name: "Robin Lee", role: "Project Manager", project: "Fund Homecare Scraper", img: robin },
-      { name: "Adit Bhimani", role: "Developer", project: "Fund Homecare Scraper", img: logo },
+      { name: "Adit Bhimani", role: "Developer", project: "Fund Homecare Scraper", img: adit },
       { name: "Cameron Ollerhead", role: "Developer", project: "Fund Homecare Scraper", img: logo },
       { name: "Justin Rowbotham", role: "Developer", project: "Fund Homecare Scraper", img: logo },
       { name: "Lucian Lavric ", role: "Developer", project: "Fund Homecare Scraper", img: lucian },
