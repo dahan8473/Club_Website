@@ -60,6 +60,8 @@ const membersData = {
       { name: "Adeline Lue Sang", role: "Developer", project: "United Way", img: logo },
       { name: "Cadence McGillicuddy", role: "Developer", project: "United Way", img: logo },
       { name: "Jack Fedash", role: "Developer", project: "United Way", img: logo },
+      { name: "Kenneth Li", role: "Developer", project: "United Way", img: logo },
+
 
       { name: "Robin Lee", role: "Project Manager", project: "TREA", img: robin },
       { name: "Aidan Naccarato", role: "Developer", project: "TREA", img: logo },
