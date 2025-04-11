@@ -8,7 +8,7 @@ const Data = () => {
       <p className='home__description'>run by students at the University of Western Ontario</p>
 
       <div className='home__buttons'>
-      <a href='https://your-link.com' className='button button--flex'>  
+      <a href='https://linktr.ee/westerntsi' className='button button--flex'>  
           Join Us
           <svg
             className='button__icon'

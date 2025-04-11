@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   cursor: pointer;
+  padding-bottom: 50px; /* Add padding to make room for pagination */
 }
 
 .project.container.section {
@@ -100,22 +101,29 @@
   color: var(--hover-color);
 }
 
-/* Custom pagination */
-.project-pagination-container {
+/* Standard Swiper pagination styling */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; 
-  width: 100%;
-  margin-top: 20px;
-  position: relative; 
+  gap: 8px;
 }
 
-.project-pagination {
-  display: flex;
-  gap: 8px;
-  justify-content: center; 
-  align-items: center;
-  width: 100%;
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: var(--title-color);
+  opacity: 0.5;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--title-color);
 }
 
 /* Breakpoints */
