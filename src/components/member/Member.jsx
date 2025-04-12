@@ -37,6 +37,11 @@ import andres from "../../assets/members/andres_pedreros.jpg";
 import zekai from "../../assets/members/Zekai_Zhao.jpg";
 import adit from "../../assets/members/Adit_Bhimani.png";
 import shivali from "../../assets/members/Shivali_Sharma.jpeg";
+import ethan2 from "../../assets/members/Ethan_Bhalla.jpg";
+import michelle from "../../assets/members/Michelle_Li.jpg";
+import vishwa from "../../assets/members/vishwa.kapadia.jpg";
+import issar from "../../assets/members/Issar_Manknojyia.png";
+import noah from "../../assets/members/noah_kostesku.jpg";
 
 
 const membersData = {
@@ -45,15 +50,14 @@ const membersData = {
       
       { name: "Sarah Chiang", role: "Project Manager", project: "GO Hockey", img: sarah },
       { name: "Trinity Ung", role: "Project Manager", project: "GO Hockey", img: trinity },
-      { name: "Clayton McCormack", role: "Developer", project: "GO Hockey", img: clayton },
       { name: "Daniel Antal", role: "Developer", project: "GO Hockey", img: logo },
       { name: "Ivory Huo", role: "Developer", project: "GO Hockey", img: ivory },
-      { name: "Noah Kostesku", role: "Developer", project: "GO Hockey", img: logo },
+      { name: "Noah Kostesku", role: "Developer", project: "GO Hockey", img: noah },
 
       { name: "Ethan Liu", role: "Project Manager", project: "JAM", img: ethan },
       { name: "Jack Hogan", role: "Project Manager", project: "JAM", img: jack },
       { name: "Alan Sanjit", role: "Developer", project: "JAM", img: logo },
-      { name: "Michelle Li", role: "Developer", project: "JAM", img: logo },
+      { name: "Michelle Li", role: "Developer", project: "JAM", img: michelle },
       { name: "Omar Hossain", role: "Developer", project: "JAM", img: logo },
       { name: "Seabar Omarzadeh", role: "Developer", project: "JAM", img: seabar },
 
@@ -80,7 +84,7 @@ const membersData = {
       { name: "James Lee", role: "Project Manager", project: "YOU", img: james },
       { name: "Christopher Lam", role: "Project Manager", project: "YOU", img: christopher },
       { name: "Cole Branston", role: "Developer", project: "YOU", img: logo },
-      { name: "Ethan Bhalla", role: "Developer", project: "YOU", img: logo },
+      { name: "Ethan Bhalla", role: "Developer", project: "YOU", img: ethan2 },
       { name: "Hadi Youssef", role: "Developer", project: "YOU", img: hadi },
       { name: "Het Patel", role: "Developer", project: "YOU", img: logo },
       { name: "Jack Branston", role: "Developer", project: "YOU", img: logo },
@@ -91,6 +95,7 @@ const membersData = {
       { name: "Dev Joshi", role: "VP Finance", project: "Operations", img: dev },
       { name: "Vinesh Ranganathan", role: "Finance Director", project: "Operations", img: vinesh },
       { name: "Sachi Sisodia", role: "VP Community", project: "Operations", img: sachi },
+      { name: "Vishwa Kapadia", role: "Community Director", project: "Operations", img: vishwa },
       { name: "Emily Berlinghoff", role: "Marketing Director", project:"Operations", img: emily},
       { name: "Lisha Makwana", role: "Marketing Director", project:"Operations", img: lisha},
     ],
@@ -101,7 +106,7 @@ const membersData = {
       { name: "Trinity Ung", role: "Project Manager", project: "FINANCE4HER", img: trinity },
       { name: "Abdullah Imran", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: clayton },
-      { name: "Issar Manknojyia", role: "Developer", project: "FINANCE4HER", img: logo },
+      { name: "Issar Manknojyia", role: "Developer", project: "FINANCE4HER", img: issar },
       { name: "Mariappan Vineeth", role: "Developer", project: "FINANCE4HER", img: mariappan },
       { name: "Zalak Hansoti", role: "Developer", project: "FINANCE4HER", img: zalak },
 
@@ -128,7 +133,7 @@ const membersData = {
       { name: "Shayo Olaiya", role: "Developer", project: "Fund Homecare", img: logo },
       { name: "Zekai Zhao", role: "Developer", project: "Fund Homecare", img: zekai },
 
-      { name: "Noah Kosteku", role: "Project Manager", project: "Fund Homecare Website Redesign", img: logo },
+      { name: "Noah Kosteku", role: "Project Manager", project: "Fund Homecare Website Redesign", img: noah },
       { name: "Stephanie Li", role: "Project Manager", project: "Fund Homecare Website Redesign", img: stephanie },
       { name: "Carmen Choi", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
       { name: "Joanna Cui", role: "Developer", project: "Fund Homecare Website Redesign", img: logo },
