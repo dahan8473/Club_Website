@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./member.css";
 
 import david from "../../assets/members/david liu.jpg";
-import sarah from "../../assets/members/sarah chiang.jpg";
+import sarahChiang from "../../assets/members/Sarah_Chiang.jpg";
 import trinity from "../../assets/members/trinity ung.png";
 import ethan from "../../assets/members/ethan liu.jpg";
 import jack from "../../assets/members/Jack_Hogan.jpg";
@@ -40,15 +40,14 @@ import shivali from "../../assets/members/Shivali_Sharma.jpeg";
 import ethan2 from "../../assets/members/Ethan_Bhalla.jpg";
 import michelle from "../../assets/members/Michelle_Li.jpg";
 import vishwa from "../../assets/members/vishwa.kapadia.jpg";
-import issar from "../../assets/members/Issar_Manknojyia.png";
+import issar from "../../assets/members/Issar_Manknojyia.jpg";
 import noah from "../../assets/members/noah_kostesku.jpg";
-
 
 const membersData = {
   "2024-2025": {
     "Fall Term": [
       
-      { name: "Sarah Chiang", role: "Project Manager", project: "GO Hockey", img: sarah },
+      { name: "Sarah Chiang", role: "Project Manager", project: "GO Hockey", img: sarahChiang },
       { name: "Trinity Ung", role: "Project Manager", project: "GO Hockey", img: trinity },
       { name: "Daniel Antal", role: "Developer", project: "GO Hockey", img: logo },
       { name: "Ivory Huo", role: "Developer", project: "GO Hockey", img: ivory },
@@ -102,7 +101,7 @@ const membersData = {
 
     "Winter Term": [
 
-      { name: "Sarah Chiang", role: "Project Manager", project: "FINANCE4HER", img: sarah },
+      { name: "Sarah Chiang", role: "Project Manager", project: "FINANCE4HER", img: sarahChiang },
       { name: "Trinity Ung", role: "Project Manager", project: "FINANCE4HER", img: trinity },
       { name: "Abdullah Imran", role: "Developer", project: "FINANCE4HER", img: logo },
       { name: "Clayton McCormack", role: "Developer", project: "FINANCE4HER", img: clayton },
