@@ -4,6 +4,7 @@ import unitedWay from "../../assets/projects/unitedWay.png";
 import TREA from "../../assets/projects/TREA.jpg";
 import BGC from "../../assets/projects/BGC.png";
 import YOU from "../../assets/projects/YOU.jpg";
+import WSC from "../../assets/projects/WSC.png";
 
 export const Data = [
   
@@ -17,7 +18,8 @@ export const Data = [
   {
     id: 2,
     image: JAM,
-    title: "RFID Interactive Museum Exhibits",
+    title: "RFID Interactive Museum Exhibits and Website Redesign",
+    link: "https://jetaircraftmuseum.ca"
 
   },
   
@@ -45,6 +47,12 @@ export const Data = [
     id: 6,
     image: YOU,
     title: "Youth Opportunities Unlimited: Workflow Management software",
+  },
+  {
+    id: 7,
+    image: WSC,
+    title: "Western Sales Club: Website and Event Management Web Application",
+    link: "https://westernsalesclub.ca"
   },
 
 ];
