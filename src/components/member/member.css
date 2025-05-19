@@ -73,17 +73,30 @@
   text-align: center;
 }
 
-/* Member Cards Row */
+/* Executive Profile Rows */
 .member-row {
   display: grid;
-  grid-template-columns: repeat(4, 220px); 
+  grid-template-columns: repeat(2, 220px); 
   justify-content: center;
   justify-items: center;
   column-gap: 1.5rem;
   row-gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
-  text-align: center;
+  text-align: center ;
+}
+
+.section__description {
+    max-width: 600px;
+    text-align: center; 
+    margin-bottom: 2rem;
+    width: 100%; /* Ensure full width up to max-width */
+    padding: 0 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0 auto 2rem;
+    padding : 0 1rem;
 }
 
 /* Member Card */
@@ -137,13 +150,6 @@
   align-items: center;
   flex: 1;
   text-align: center;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 992px) {
-  .member-row {
-    grid-template-columns: repeat(3, 220px); /* 3 members per row */
-  }
 }
 
 @media screen and (max-width: 768px) {

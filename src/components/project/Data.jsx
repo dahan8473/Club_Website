@@ -25,11 +25,10 @@ export const Data = [
   
   {
     id: 3,
-    image: unitedWay,
-    title: "TD StairClimb Fundraising leaderboard",
-    link: "https://jxohg.github.io/leaderboard-app",
+    image: WSC,
+    title: "Western Sales Club: Website and Event Management Web Application",
+    link: "https://westernsalesclub.ca"
   },
-
   {
     id: 4,
     image: TREA,
@@ -48,11 +47,12 @@ export const Data = [
     image: YOU,
     title: "Youth Opportunities Unlimited: Workflow Management software",
   },
+
   {
     id: 7,
-    image: WSC,
-    title: "Western Sales Club: Website and Event Management Web Application",
-    link: "https://westernsalesclub.ca"
+    image: unitedWay,
+    title: "TD StairClimb Fundraising leaderboard",
+    link: "https://jxohg.github.io/leaderboard-app",
   },
 
 ];
