@@ -24,6 +24,7 @@
   align-items: center;
   cursor: pointer;
   height: 100%; 
+  position: relative; /* Add position relative to establish stacking context */
 }
 
 .project__img-container {
@@ -36,15 +37,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible; 
+  overflow: hidden; /* Control overflow to prevent images from covering text */
 }
 
 .project__img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%; /* Reduce from 100% to 90% */
+  max-height: 90%; /* Reduce from 100% to 90% */
   width: auto; 
   height: auto; 
-  object-fit: scale-down;
+  object-fit: contain;
   object-position: center;
   transition: transform 0.3s ease;
 }
@@ -59,12 +60,16 @@
   margin-bottom: var(--mb-0-25);
   text-align: center; 
   width: 100%; 
+  position: relative; /* Add position relative */
+  z-index: 2; /* Ensure text is above images */
 }
 
 .project__description {
   font-size: var(--small-font-size);
   text-align: center; 
   width: 100%; 
+  position: relative; /* Add position relative */
+  z-index: 2; /* Ensure text is above images */
 }
 
 /* Navigation buttons */
@@ -137,12 +142,70 @@
   }
   
   .project__img-container {
-    height: 180px; 
+    height: auto; /* Auto height based on content */
+    max-height: 180px; /* Maximum height */
+  }
+  
+  .project__img {
+    max-width: 80%; /* Slightly smaller on tablet */
+    max-height: 80%; /* Slightly smaller on tablet */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project__card {
+    padding: 0.75rem;
+  }
+  
+  .project__img-container {
+    height: auto; /* Allow natural height */
+    max-height: 160px; /* Set maximum height */
+  }
+  
+  .project__img {
+    max-width: 75%; /* Smaller images on tablet/mobile */
+    max-height: 75%; /* Smaller images on tablet/mobile */
   }
 }
 
 @media screen and (max-width: 576px) {
   .project__img-container {
-    height: 160px; 
+    height: auto; /* Allow height to be determined by content */
+    max-height: 140px; /* Limit maximum height */
+    padding: 0.5rem; /* Reduced padding for mobile */
+    margin-bottom: 1.25rem; /* More space between image and text */
+  }
+  
+  .project__img {
+    max-width: 70%; /* Make images significantly smaller on mobile */
+    max-height: 70%; /* Make images significantly smaller on mobile */
+    width: auto !important; /* Ensure width is auto */
+    height: auto !important; /* Ensure height is auto */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+  }
+  
+  .project__card {
+    padding: 0.75rem 0.5rem; /* Reduced card padding for mobile */
+    display: flex;
+    flex-direction: column;
+    min-height: 240px; /* Ensure card has minimum height to fit content */
+    justify-content: flex-start; /* Align content to top */
+  }
+  
+  /* Make navigation buttons smaller on mobile */
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 16px;
+  }
+  
+  /* Ensure text doesn't get covered */
+  .project__name {
+    margin-top: 0.5rem;
+    font-size: calc(var(--small-font-size) + 1px);
+    line-height: 1.3;
+  }
+  
+  .project__description {
+    font-size: var(--smaller-font-size);
+    line-height: 1.4;
   }
 }

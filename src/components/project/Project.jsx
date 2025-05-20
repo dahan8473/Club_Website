@@ -26,8 +26,6 @@ const Project = () => {
         speed={600}
         pagination={{
           clickable: true,
-          // Don't use the custom pagination element for now
-          // el: '.project-pagination',
           type: 'bullets',
         }}
         navigation={true}
@@ -49,10 +47,22 @@ const Project = () => {
               <div className="project__img-container">
                 {link ? (
                   <a href={link} target="_blank" rel="noopener noreferrer">
-                    <img src={image} alt={title} className="project__img" />
+                    <img 
+                      src={image} 
+                      alt={title} 
+                      className="project__img"
+                      loading="lazy"
+                      style={{ maxWidth: '100%', height: 'auto' }} 
+                    />
                   </a>
                 ) : (
-                  <img src={image} alt={title} className="project__img" />
+                  <img 
+                    src={image} 
+                    alt={title} 
+                    className="project__img"
+                    loading="lazy"
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                  />
                 )}
               </div>
             
@@ -62,11 +72,6 @@ const Project = () => {
           );
         })}
       </Swiper>
-      
-      {/* Removing the custom pagination container for now */}
-      {/* <div className="project-pagination-container">
-        <div className="project-pagination"></div>
-      </div> */}
     </section>
   );
 };
