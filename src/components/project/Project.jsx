@@ -52,7 +52,6 @@ const Project = () => {
                       alt={title} 
                       className="project__img"
                       loading="lazy"
-                      style={{ maxWidth: '100%', height: 'auto' }} 
                     />
                   </a>
                 ) : (
@@ -61,7 +60,6 @@ const Project = () => {
                     alt={title} 
                     className="project__img"
                     loading="lazy"
-                    style={{ maxWidth: '100%', height: 'auto' }}
                   />
                 )}
               </div>

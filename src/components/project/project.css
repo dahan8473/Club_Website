@@ -37,7 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Control overflow to prevent images from covering text */
+  overflow: visible; /* Allow overflow so images aren't cut off */
+  background-color: white; /* White background */
 }
 
 .project__img {
@@ -48,6 +49,7 @@
   object-fit: contain;
   object-position: center;
   transition: transform 0.3s ease;
+  box-shadow: 0 0 0 5px white; /* White padding around image */
 }
 
 .project__img:hover {
@@ -159,12 +161,22 @@
   
   .project__img-container {
     height: auto; /* Allow natural height */
-    max-height: 160px; /* Set maximum height */
+    min-height: 130px; /* Minimum height */
+    background-color: white; /* White background */
   }
   
   .project__img {
-    max-width: 75%; /* Smaller images on tablet/mobile */
-    max-height: 75%; /* Smaller images on tablet/mobile */
+    max-width: 65%; /* Smaller images on tablet/mobile */
+    max-height: 65%; /* Smaller images on tablet/mobile */
+    box-shadow: 0 0 0 5px white; /* White padding around image */
+  }
+  
+  /* Create solid background for text */
+  .project__name,
+  .project__description {
+    background-color: var(--container-color);
+    padding: 0.25rem;
+    width: 100%;
   }
 }
 
