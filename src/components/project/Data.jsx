@@ -5,6 +5,7 @@ import TREA from "../../assets/projects/TREA.jpg";
 import BGC from "../../assets/projects/BGC.png";
 import YOU from "../../assets/projects/YOU.jpg";
 import WSC from "../../assets/projects/WSC.png";
+import fundHomecare from "../../assets/projects/FundHomecare.png"
 
 export const Data = [
   
@@ -53,6 +54,13 @@ export const Data = [
     image: unitedWay,
     title: "TD StairClimb Fundraising leaderboard",
     link: "https://jxohg.github.io/leaderboard-app",
+  },
+
+  {
+    id:8,
+    image: fundHomecare,
+    title: "Fund Homecare Website",
+    link: "https://www.fundhomecare.ca/",
   },
 
 ];
